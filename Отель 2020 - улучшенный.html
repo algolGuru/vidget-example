@@ -1,0 +1,3016 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=1280" />
+<title>Отель 2020 — Йошкар-Ола · Официальный сайт</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Manrope:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg:        oklch(0.972 0.010 82);
+    --bg-deep:   oklch(0.945 0.014 78);
+    --bg-card:   oklch(0.992 0.006 85);
+    --ink:       oklch(0.22  0.012 60);
+    --ink-soft:  oklch(0.40  0.012 60);
+    --muted:     oklch(0.55  0.010 65);
+    --line:      oklch(0.88  0.012 75);
+    --line-soft: oklch(0.92  0.010 75);
+    --bronze:    oklch(0.58  0.075 62);
+    --bronze-d:  oklch(0.47  0.080 60);
+    --sage:      oklch(0.48  0.045 150);
+    --sage-soft: oklch(0.86  0.025 150);
+    --warn:      oklch(0.58  0.13 35);
+    --serif: "Cormorant Garamond", "Times New Roman", serif;
+    --sans:  "Manrope", system-ui, sans-serif;
+    --mono:  "JetBrains Mono", ui-monospace, monospace;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; }
+  body {
+    background: var(--bg);
+    color: var(--ink);
+    font-family: var(--sans);
+    font-size: 15px;
+    line-height: 1.55;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+  img, svg { display: block; max-width: 100%; }
+  a { color: inherit; text-decoration: none; }
+  button { font: inherit; cursor: pointer; border: 0; background: none; color: inherit; }
+
+  /* ── Type ───────────────────────────────────────── */
+  .eyebrow {
+    font-family: var(--mono);
+    font-size: 11px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--bronze-d);
+    font-weight: 500;
+  }
+  .h-display {
+    font-family: var(--serif);
+    font-weight: 500;
+    font-size: 88px;
+    line-height: 0.98;
+    letter-spacing: -0.015em;
+    margin: 0;
+  }
+  .h-display em { font-style: italic; color: var(--bronze-d); font-weight: 400; }
+  /* hero number treatment — dominant 2020 */
+  .h-hero {
+    font-family: var(--serif);
+    font-weight: 500;
+    margin: 0;
+    letter-spacing: -0.03em;
+  }
+  .h-hero .num {
+    display: block;
+    font-size: 220px;
+    line-height: 0.86;
+    letter-spacing: -0.04em;
+    color: var(--ink);
+  }
+  .h-hero .num em {
+    font-style: italic;
+    color: var(--bronze-d);
+    font-weight: 400;
+    margin-left: -0.04em;
+  }
+  .h-hero .tag {
+    display: block;
+    margin-top: 14px;
+    font-size: 34px;
+    line-height: 1.1;
+    letter-spacing: -0.005em;
+    color: var(--ink-soft);
+    max-width: 14ch;
+  }
+  .h-hero .tag em { font-style: italic; color: var(--bronze-d); font-weight: 400; }
+  .h-section {
+    font-family: var(--serif);
+    font-weight: 500;
+    font-size: 52px;
+    line-height: 1.02;
+    letter-spacing: -0.01em;
+    margin: 0;
+  }
+  .h-section em { font-style: italic; font-weight: 400; }
+  .h-card {
+    font-family: var(--serif);
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 1.1;
+    margin: 0;
+  }
+  .lede { font-size: 16px; color: var(--ink-soft); max-width: 46ch; }
+
+  /* ── Layout ─────────────────────────────────────── */
+  .wrap { max-width: 1280px; margin: 0 auto; padding: 0 32px; }
+
+  /* ── Header ─────────────────────────────────────── */
+  header.top {
+    position: sticky; top: 0; z-index: 50;
+    background: color-mix(in oklab, var(--bg) 88%, transparent);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--line-soft);
+  }
+  .top-inner {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    gap: 32px;
+    padding: 18px 32px;
+    max-width: 1280px; margin: 0 auto;
+  }
+  .logo {
+    font-family: var(--serif);
+    font-size: 22px;
+    line-height: 1;
+    color: var(--bronze-d);
+    letter-spacing: 0.02em;
+    display: flex; flex-direction: column;
+  }
+  .logo b { font-weight: 500; font-size: 22px; }
+  .logo span { font-family: var(--mono); font-size: 10px; letter-spacing: 0.2em; color: var(--muted); margin-top: 2px; white-space: nowrap; }
+  nav.primary {
+    display: flex; gap: 28px;
+    font-size: 14px; color: var(--ink-soft);
+    justify-content: center;
+  }
+  nav.primary a { position: relative; padding: 4px 0; white-space: nowrap; }
+  nav.primary a:hover { color: var(--ink); }
+  nav.primary a.on { color: var(--ink); }
+  nav.primary a.on::after {
+    content: ""; position: absolute; left: 0; right: 0; bottom: -2px;
+    height: 1px; background: var(--bronze);
+  }
+  .top-right { display: flex; align-items: center; gap: 20px; }
+  .phone { display: flex; flex-direction: column; align-items: flex-end; line-height: 1.2; }
+  .phone b { font-weight: 600; font-size: 15px; }
+  .phone span { font-family: var(--mono); font-size: 10px; letter-spacing: 0.14em; color: var(--muted); text-transform: uppercase; }
+  .btn {
+    display: inline-flex; align-items: center; gap: 8px;
+    padding: 12px 22px;
+    border-radius: 999px;
+    background: var(--bronze);
+    color: oklch(0.99 0.005 80);
+    font-weight: 600;
+    font-size: 14px;
+    letter-spacing: 0.01em;
+    transition: background .15s ease, transform .15s ease;
+  }
+  .btn:hover { background: var(--bronze-d); }
+  .btn.ghost {
+    background: transparent;
+    border: 1px solid var(--line);
+    color: var(--ink);
+  }
+  .btn.ghost:hover { border-color: var(--ink); }
+  .btn.dark { background: var(--ink); color: var(--bg); }
+  .btn.dark:hover { background: oklch(0.30 0.012 60); }
+
+  /* ── Compare table (direct vs aggregators) ────── */
+  .compare {
+    background: var(--ink);
+    color: var(--bg);
+    border-radius: 8px;
+    overflow: hidden;
+    padding: 64px 56px;
+  }
+  .compare-head {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 24px;
+    align-items: end;
+    margin-bottom: 48px;
+  }
+  .compare-head .eyebrow { color: var(--bronze); display: block; margin-bottom: 16px; }
+  .compare-head h3 {
+    font-family: var(--serif);
+    font-size: 48px;
+    font-weight: 500;
+    line-height: 1;
+    margin: 0;
+    letter-spacing: -0.01em;
+    max-width: 16ch;
+  }
+  .compare-head h3 em { font-style: italic; color: var(--bronze); }
+  .compare-head .note {
+    font-size: 13px;
+    color: oklch(0.72 0.012 65);
+    max-width: 32ch;
+    line-height: 1.5;
+    text-align: right;
+  }
+  .compare-table {
+    display: grid;
+    grid-template-columns: 1.4fr 1fr 1fr 1fr;
+    border-top: 1px solid oklch(0.32 0.012 60);
+  }
+  .compare-table > div {
+    padding: 22px 20px;
+    border-bottom: 1px solid oklch(0.32 0.012 60);
+    font-size: 14px;
+    color: oklch(0.85 0.010 65);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .compare-table .ch-head {
+    font-family: var(--mono);
+    font-size: 10px;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: oklch(0.65 0.010 65);
+    padding-top: 0;
+    padding-bottom: 16px;
+    border-bottom: 1px solid oklch(0.32 0.012 60);
+    border-top: 0;
+    align-items: end;
+  }
+  .compare-table .ch-head.us {
+    color: var(--bronze);
+    font-weight: 600;
+  }
+  .compare-table .row-label {
+    color: var(--bg);
+    font-weight: 500;
+  }
+  .compare-table .us-col {
+    background: oklch(0.28 0.020 60);
+    color: var(--bg);
+    font-weight: 600;
+  }
+  .compare-table .us-col.ch-head {
+    background: oklch(0.28 0.020 60);
+  }
+  .compare-table .yes::before {
+    content: "✓";
+    color: var(--sage-soft);
+    font-weight: 700;
+    margin-right: 4px;
+  }
+  .compare-table .us-col.yes::before { color: var(--bronze); }
+  .compare-table .no::before {
+    content: "—";
+    color: oklch(0.50 0.012 65);
+    margin-right: 4px;
+  }
+  .compare-table .maybe::before {
+    content: "≈";
+    color: var(--warn);
+    margin-right: 4px;
+  }
+  .compare-cta {
+    margin-top: 32px;
+    display: flex; align-items: center; justify-content: space-between; gap: 24px;
+  }
+  .compare-cta p {
+    margin: 0;
+    color: oklch(0.78 0.010 65);
+    font-size: 13px;
+  }
+
+  /* ── Hero ───────────────────────────────────────── */
+  .hero {
+    padding: 56px 0 0;
+    position: relative;
+  }
+  .hero-grid {
+    display: grid;
+    grid-template-columns: 0.92fr 1.08fr;
+    gap: 64px;
+    align-items: stretch;
+  }
+  .hero-copy { padding-bottom: 32px; display: flex; flex-direction: column; justify-content: center; }
+  .hero-copy .eyebrow { display: inline-flex; align-items: center; gap: 10px; margin-bottom: 32px; }
+  .hero-copy .eyebrow::before { content: ""; width: 28px; height: 1px; background: var(--bronze); }
+  .hero-copy .lede { margin: 28px 0 40px; }
+  .hero-stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px;
+    border-top: 1px solid var(--line);
+    padding-top: 24px;
+    margin-top: 8px;
+  }
+  .hero-stats .s { }
+  .hero-stats .num {
+    font-family: var(--serif);
+    font-size: 40px;
+    line-height: 1;
+    font-weight: 500;
+    color: var(--ink);
+  }
+  .hero-stats .num sup { font-size: 16px; color: var(--bronze-d); vertical-align: super; margin-left: 2px; }
+  .hero-stats .lbl {
+    font-size: 12px; color: var(--muted);
+    margin-top: 8px;
+    max-width: 16ch;
+  }
+
+  .hero-image-wrap {
+    position: relative;
+    aspect-ratio: auto;
+    min-height: 620px;
+    border-radius: 6px;
+    overflow: hidden;
+    background: var(--bg-deep);
+    display: flex;
+    align-items: stretch;
+    padding: 28px;
+  }
+  /* Placeholder system — composite "interior" feel: warm wash + light spill + texture + corner crop */
+  .ph-room {
+    position: absolute; inset: 0;
+    overflow: hidden;
+    background:
+      radial-gradient(140% 80% at 80% 18%, oklch(0.92 0.025 75 / 0.55) 0%, transparent 55%),
+      radial-gradient(60% 50% at 20% 90%, oklch(0.35 0.025 45 / 0.45) 0%, transparent 60%),
+      linear-gradient(165deg, oklch(0.78 0.028 75) 0%, oklch(0.50 0.035 55) 100%);
+  }
+  .ph-room::before {
+    content: "";
+    position: absolute; inset: 0;
+    background-image: repeating-linear-gradient(
+      48deg,
+      transparent 0 26px,
+      oklch(0.99 0.01 80 / 0.05) 26px 27px);
+    mix-blend-mode: overlay;
+  }
+  .ph-room::after {
+    /* subtle "window" rectangle suggestion in the top right */
+    content: "";
+    position: absolute;
+    top: 12%; right: 8%;
+    width: 32%; height: 38%;
+    background: linear-gradient(180deg, oklch(0.96 0.02 85 / 0.18), oklch(0.96 0.02 85 / 0.04));
+    border: 1px solid oklch(0.99 0.01 80 / 0.10);
+    border-radius: 2px;
+  }
+  .ph-room.hero-bg::after { display: none; }
+  .ph-room.hero-bg { background:
+    radial-gradient(120% 70% at 80% 18%, oklch(0.92 0.025 80 / 0.45) 0%, transparent 60%),
+    radial-gradient(60% 50% at 18% 92%, oklch(0.35 0.025 50 / 0.40) 0%, transparent 60%),
+    linear-gradient(165deg, oklch(0.74 0.030 70) 0%, oklch(0.48 0.040 55) 100%);
+  }
+  .ph-room .ph-label {
+    position: absolute; left: 16px; bottom: 16px;
+    font-family: var(--mono); font-size: 10px;
+    letter-spacing: 0.14em; color: oklch(0.99 0.01 80 / 0.85);
+    background: oklch(0.18 0.012 60 / 0.45);
+    padding: 6px 10px; border-radius: 2px;
+    text-transform: uppercase;
+    backdrop-filter: blur(4px);
+    z-index: 2;
+  }
+
+  /* booking widget — pinned to hero image */
+  .booking {
+    position: relative;
+    width: 100%;
+    align-self: center;
+    background: oklch(0.99 0.005 80 / 0.97);
+    backdrop-filter: blur(16px);
+    border: 1px solid oklch(0.99 0.01 80 / 0.6);
+    border-radius: 6px;
+    padding: 32px;
+    box-shadow: 0 24px 48px -16px oklch(0.20 0.020 60 / 0.30);
+    z-index: 3;
+  }
+  .booking-header {
+    display: flex; justify-content: space-between; align-items: baseline;
+    margin-bottom: 16px;
+  }
+  .booking-header span {
+    font-family: var(--mono);
+    font-size: 10px;
+    letter-spacing: 0.14em;
+    color: var(--sage);
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+  .booking h4 {
+    font-family: var(--serif);
+    font-size: 32px;
+    font-weight: 500;
+    margin: 0 0 20px;
+  }
+  .booking .row {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    border: 1px solid var(--line);
+    border-radius: 4px;
+    margin-bottom: 8px;
+    background: var(--bg-card);
+  }
+  .booking .field {
+    padding: 14px 18px;
+    border-right: 1px solid var(--line);
+  }
+  .booking .field:last-child { border-right: 0; }
+  .booking .field label {
+    font-family: var(--mono);
+    font-size: 9px;
+    letter-spacing: 0.14em;
+    color: var(--muted);
+    text-transform: uppercase;
+    display: block;
+  }
+  .booking .field .val {
+    font-size: 16px; font-weight: 500;
+    margin-top: 5px;
+  }
+  .booking .one {
+    grid-template-columns: 1fr;
+  }
+  .booking .find {
+    width: 100%;
+    margin-top: 16px;
+    padding: 18px;
+    border-radius: 4px;
+    background: var(--ink);
+    color: var(--bg);
+    font-weight: 600;
+    font-size: 15px;
+    letter-spacing: 0.01em;
+    transition: background .15s ease;
+  }
+  .booking .find:hover { background: oklch(0.32 0.012 60); }
+  .booking .note {
+    margin-top: 12px;
+    font-size: 11px;
+    color: var(--muted);
+    text-align: center;
+  }
+  .booking .note b { color: var(--sage); font-weight: 600; }
+
+  /* ── Trust strip ────────────────────────────────── */
+  .trust {
+    margin-top: 88px;
+    padding: 24px 0;
+    border-top: 1px solid var(--line);
+    border-bottom: 1px solid var(--line);
+  }
+  .trust-row {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0;
+  }
+  .trust-row .item {
+    padding: 8px 24px;
+    border-right: 1px solid var(--line-soft);
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+  .trust-row .item:last-child { border-right: 0; }
+  .trust-row .item:first-child { padding-left: 0; }
+  .trust-row .icon {
+    width: 36px; height: 36px;
+    border-radius: 50%;
+    background: var(--bg-deep);
+    color: var(--bronze-d);
+    display: flex; align-items: center; justify-content: center;
+    flex: 0 0 36px;
+  }
+  .trust-row .label { font-size: 13px; color: var(--ink-soft); line-height: 1.3; }
+  .trust-row .label b { display: block; font-weight: 600; color: var(--ink); font-size: 14px; }
+
+  /* ── Sections common ───────────────────────────── */
+  section { padding: 120px 0; }
+  .sec-head {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: end;
+    gap: 32px;
+    margin-bottom: 56px;
+  }
+  .sec-head .left { max-width: 720px; }
+  .sec-head .eyebrow { display: block; margin-bottom: 20px; }
+  .sec-head .sub { margin-top: 20px; color: var(--ink-soft); font-size: 16px; max-width: 52ch; }
+
+  /* ── About ──────────────────────────────────────── */
+  .about-grid {
+    display: grid;
+    grid-template-columns: 1.05fr 1fr;
+    gap: 72px;
+    align-items: center;
+  }
+  .about-text .h-section { margin-bottom: 28px; }
+  .about-text p {
+    color: var(--ink-soft);
+    font-size: 17px;
+    margin: 0 0 18px;
+    max-width: 52ch;
+  }
+  .about-text .sig {
+    margin-top: 32px;
+    font-family: var(--serif);
+    font-style: italic;
+    font-size: 18px;
+    color: var(--ink);
+  }
+  .about-text .sig small {
+    display: block;
+    font-family: var(--sans);
+    font-style: normal;
+    font-size: 12px;
+    color: var(--muted);
+    margin-top: 4px;
+    letter-spacing: 0.04em;
+  }
+  .about-collage {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 12px;
+    height: 480px;
+    position: relative;
+  }
+  .about-collage .tile { border-radius: 4px; overflow: hidden; position: relative; background: var(--bg-deep); }
+  .about-collage .tile.a { grid-row: span 2; }
+  .about-badge {
+    position: absolute;
+    right: -20px;
+    bottom: -20px;
+    background: var(--bg-card);
+    border: 1px solid var(--line);
+    border-radius: 6px;
+    padding: 22px 24px;
+    z-index: 5;
+    box-shadow: 0 24px 48px -24px oklch(0.20 0.020 60 / 0.25);
+    width: 240px;
+  }
+  .about-badge .seal {
+    font-family: var(--mono);
+    font-size: 10px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--bronze-d);
+    margin-bottom: 10px;
+  }
+  .about-badge .since {
+    font-family: var(--serif);
+    font-size: 30px;
+    line-height: 1.05;
+    font-weight: 500;
+    letter-spacing: -0.005em;
+  }
+  .about-badge .since em {
+    font-style: italic;
+    color: var(--bronze-d);
+    font-weight: 400;
+  }
+  .about-badge .meta {
+    margin-top: 10px;
+    padding-top: 12px;
+    border-top: 1px solid var(--line-soft);
+    font-size: 12px;
+    color: var(--ink-soft);
+    line-height: 1.5;
+  }
+  .ph-soft {
+    position: absolute; inset: 0;
+    overflow: hidden;
+    background:
+      radial-gradient(130% 80% at 78% 12%, oklch(0.94 0.025 88 / 0.55) 0%, transparent 60%),
+      linear-gradient(165deg, oklch(0.82 0.030 80) 0%, oklch(0.55 0.035 60) 100%);
+  }
+  .ph-soft::before {
+    content: ""; position: absolute; inset: 0;
+    background-image: repeating-linear-gradient(
+      48deg, transparent 0 26px,
+      oklch(0.99 0.01 80 / 0.05) 26px 27px);
+    mix-blend-mode: overlay;
+  }
+  .ph-soft.sage {
+    background:
+      radial-gradient(130% 80% at 78% 12%, oklch(0.90 0.025 145 / 0.50) 0%, transparent 60%),
+      linear-gradient(165deg, oklch(0.70 0.030 150) 0%, oklch(0.40 0.035 150) 100%);
+  }
+  .ph-soft.dark {
+    background:
+      radial-gradient(130% 70% at 78% 14%, oklch(0.65 0.025 65 / 0.45) 0%, transparent 60%),
+      linear-gradient(165deg, oklch(0.45 0.025 55) 0%, oklch(0.22 0.020 45) 100%);
+  }
+  .ph-soft.warm {
+    background:
+      radial-gradient(130% 80% at 78% 12%, oklch(0.95 0.030 75 / 0.55) 0%, transparent 60%),
+      linear-gradient(165deg, oklch(0.85 0.035 70) 0%, oklch(0.58 0.045 55) 100%);
+  }
+  .ph-soft.dawn {
+    background:
+      radial-gradient(140% 80% at 85% 18%, oklch(0.94 0.040 35 / 0.55) 0%, transparent 60%),
+      linear-gradient(165deg, oklch(0.78 0.045 50) 0%, oklch(0.45 0.050 35) 100%);
+  }
+  .ph-soft.dusk {
+    background:
+      radial-gradient(140% 80% at 22% 78%, oklch(0.60 0.050 35 / 0.40) 0%, transparent 60%),
+      linear-gradient(165deg, oklch(0.50 0.040 280) 0%, oklch(0.25 0.035 270) 100%);
+  }
+  .ph-soft.cream {
+    background:
+      radial-gradient(140% 80% at 70% 20%, oklch(0.98 0.020 85 / 0.50) 0%, transparent 65%),
+      linear-gradient(165deg, oklch(0.90 0.020 85) 0%, oklch(0.68 0.030 75) 100%);
+  }
+  .ph-soft .ph-label {
+    position: absolute; left: 14px; bottom: 14px;
+    font-family: var(--mono); font-size: 10px;
+    letter-spacing: 0.14em; color: oklch(0.99 0.01 80 / 0.85);
+    background: oklch(0.20 0.012 60 / 0.35);
+    padding: 5px 9px; border-radius: 2px;
+    text-transform: uppercase;
+  }
+
+  /* ── Rooms ──────────────────────────────────────── */
+  .rooms-section { background: var(--bg-deep); }
+  .room-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 1fr;
+    gap: 18px;
+  }
+  .room {
+    background: var(--bg-card);
+    border: 1px solid var(--line-soft);
+    border-radius: 6px;
+    overflow: hidden;
+    display: flex; flex-direction: column;
+    transition: transform .25s ease, box-shadow .25s ease;
+  }
+  .room:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 20px 40px -28px oklch(0.20 0.020 60 / 0.30);
+  }
+  .room.featured {
+    grid-column: span 2;
+    grid-row: span 2;
+    background: var(--ink);
+    color: var(--bg);
+    border-color: var(--ink);
+  }
+  .room.featured .img { aspect-ratio: auto; flex: 1 1 60%; min-height: 380px; }
+  .room.featured .body { padding: 36px; gap: 20px; flex: 1 1 40%; justify-content: space-between; }
+  .room.featured h3 { font-size: 36px; }
+  .room.featured .price b { font-size: 26px; }
+  .room .img {
+    position: relative;
+    aspect-ratio: 4/3;
+    overflow: hidden;
+  }
+  .room .badge {
+    position: absolute; top: 12px; left: 12px;
+    background: var(--bg-card);
+    color: var(--ink);
+    font-size: 11px;
+    font-weight: 600;
+    padding: 5px 10px;
+    border-radius: 999px;
+    letter-spacing: 0.02em;
+  }
+  .room .badge.hot {
+    background: var(--warn);
+    color: var(--bg);
+  }
+  .room .badge.premium {
+    background: var(--ink);
+    color: var(--bg);
+  }
+  .room.featured .badge.premium { background: var(--bronze); }
+  .room .availability {
+    position: absolute; bottom: 12px; left: 12px;
+    background: oklch(0.20 0.012 60 / 0.65);
+    color: oklch(0.99 0.01 80 / 0.95);
+    backdrop-filter: blur(4px);
+    font-family: var(--mono);
+    font-size: 10px;
+    letter-spacing: 0.08em;
+    padding: 5px 9px;
+    border-radius: 2px;
+    text-transform: uppercase;
+  }
+  .room .body { padding: 20px; display: flex; flex-direction: column; flex: 1; gap: 14px; }
+  .room .title-row { display: flex; justify-content: space-between; align-items: baseline; gap: 8px; flex-wrap: wrap; }
+  .room .title-row h3 { min-width: 0; flex: 1 1 auto; }
+  .room h3 { font-family: var(--serif); font-size: 22px; font-weight: 500; margin: 0; line-height: 1.05; }
+  .room.featured h3 { color: var(--bg); }
+  .room .price { text-align: right; flex: 0 0 auto; white-space: nowrap; }
+  .room .price b {
+    font-family: var(--serif);
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1;
+    letter-spacing: -0.01em;
+  }
+  .room .price span {
+    display: block;
+    font-size: 11px;
+    color: var(--muted);
+    margin-top: 2px;
+    font-family: var(--mono);
+    letter-spacing: 0.05em;
+  }
+  .room.featured .price span { color: oklch(0.75 0.012 60); }
+  .room .desc { font-size: 13px; color: var(--ink-soft); line-height: 1.45; }
+  .room.featured .desc { color: oklch(0.80 0.010 65); }
+  .room .meta {
+    display: flex; flex-wrap: wrap; gap: 12px;
+    padding: 12px 0;
+    border-top: 1px solid var(--line-soft);
+    font-size: 12px;
+    color: var(--ink-soft);
+  }
+  .room.featured .meta {
+    border-color: oklch(0.30 0.012 60);
+    color: oklch(0.78 0.010 65);
+  }
+  .room .meta span { display: inline-flex; align-items: center; gap: 6px; }
+  .room .meta svg { opacity: 0.7; }
+  .room .pick {
+    margin-top: auto;
+    padding: 11px;
+    background: var(--bg-deep);
+    color: var(--ink);
+    border-radius: 4px;
+    font-size: 13px;
+    font-weight: 600;
+    text-align: center;
+    transition: background .15s ease;
+  }
+  .room:hover .pick { background: var(--bronze); color: var(--bg); }
+  .room.featured .pick {
+    background: var(--bronze);
+    color: var(--bg);
+  }
+  .room.featured:hover .pick { background: var(--bronze-d); }
+  .ph-room.r1 { background:
+      radial-gradient(120% 80% at 80% 15%, oklch(0.93 0.020 80 / 0.55) 0%, transparent 55%),
+      radial-gradient(60% 50% at 18% 92%, oklch(0.30 0.025 45 / 0.45) 0%, transparent 60%),
+      linear-gradient(165deg, oklch(0.80 0.030 75) 0%, oklch(0.48 0.038 55) 100%); }
+  .ph-room.r2 { background:
+      radial-gradient(130% 80% at 80% 12%, oklch(0.90 0.025 145 / 0.50) 0%, transparent 60%),
+      radial-gradient(60% 50% at 20% 92%, oklch(0.22 0.030 145 / 0.5) 0%, transparent 60%),
+      linear-gradient(165deg, oklch(0.70 0.030 150) 0%, oklch(0.38 0.035 150) 100%); }
+  .ph-room.r3 { background:
+      radial-gradient(140% 90% at 85% 14%, oklch(0.95 0.025 88 / 0.60) 0%, transparent 55%),
+      radial-gradient(50% 50% at 14% 90%, oklch(0.35 0.030 50 / 0.40) 0%, transparent 60%),
+      linear-gradient(160deg, oklch(0.82 0.032 82) 0%, oklch(0.50 0.038 60) 100%); }
+  .ph-room.r4 { background:
+      radial-gradient(120% 80% at 80% 16%, oklch(0.78 0.030 70 / 0.50) 0%, transparent 55%),
+      radial-gradient(60% 50% at 18% 92%, oklch(0.18 0.020 40 / 0.55) 0%, transparent 60%),
+      linear-gradient(165deg, oklch(0.55 0.025 50) 0%, oklch(0.26 0.020 40) 100%); }
+
+  /* ── Offer banner ──────────────────────────────── */
+  .offer {
+    margin: 0 auto;
+    background: var(--ink);
+    color: var(--bg);
+    border-radius: 8px;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 1.05fr 1fr;
+    align-items: stretch;
+    min-height: 360px;
+  }
+  .offer-text { padding: 56px; display: flex; flex-direction: column; justify-content: center; }
+  .offer-text .eyebrow { color: var(--bronze); margin-bottom: 24px; }
+  .offer-text h3 {
+    font-family: var(--serif);
+    font-size: 56px;
+    font-weight: 500;
+    line-height: 1;
+    margin: 0 0 24px;
+    letter-spacing: -0.01em;
+  }
+  .offer-text h3 em { font-style: italic; color: var(--bronze); }
+  .offer-text p { color: oklch(0.80 0.010 65); max-width: 38ch; margin: 0 0 32px; }
+  .offer-perks {
+    display: flex; flex-wrap: wrap; gap: 8px;
+    margin-bottom: 32px;
+  }
+  .offer-perks span {
+    font-size: 12px;
+    padding: 6px 12px;
+    border: 1px solid oklch(0.40 0.012 60);
+    border-radius: 999px;
+    color: oklch(0.85 0.010 65);
+  }
+  .offer-text .cta-row { display: flex; align-items: center; gap: 24px; }
+  .offer-text .cta-row .terms {
+    font-size: 12px;
+    color: oklch(0.65 0.010 65);
+  }
+  .offer-visual {
+    position: relative;
+    background: linear-gradient(135deg, oklch(0.45 0.040 60) 0%, oklch(0.30 0.030 50) 100%);
+    display: flex; align-items: center; justify-content: center;
+    padding: 56px 40px;
+    overflow: hidden;
+  }
+  /* Loyalty cards stack */
+  .loyalty-stack {
+    position: relative;
+    width: 280px;
+    height: 280px;
+  }
+  .loy-card {
+    position: absolute;
+    width: 280px;
+    height: 170px;
+    border-radius: 12px;
+    padding: 18px 20px;
+    box-shadow: 0 30px 60px -20px oklch(0.10 0.020 60 / 0.6),
+                inset 0 1px 0 oklch(0.99 0.01 80 / 0.18);
+    display: flex; flex-direction: column; justify-content: space-between;
+    color: oklch(0.99 0.01 80 / 0.95);
+    font-family: var(--mono);
+  }
+  .loy-card .lc-top { display: flex; justify-content: space-between; align-items: flex-start; }
+  .loy-card .lc-brand {
+    font-family: var(--serif);
+    font-size: 18px;
+    line-height: 1.05;
+    letter-spacing: 0.02em;
+  }
+  .loy-card .lc-brand small {
+    display: block;
+    font-family: var(--mono);
+    font-size: 9px;
+    letter-spacing: 0.18em;
+    opacity: 0.7;
+    margin-top: 4px;
+    text-transform: uppercase;
+  }
+  .loy-card .lc-tier {
+    font-family: var(--serif);
+    font-size: 22px;
+    letter-spacing: 0.16em;
+    font-weight: 500;
+  }
+  .loy-card .lc-bot { display: flex; justify-content: space-between; align-items: flex-end; }
+  .loy-card .lc-num {
+    font-size: 11px;
+    letter-spacing: 0.18em;
+    opacity: 0.78;
+  }
+  .loy-card .lc-pct {
+    font-family: var(--serif);
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 1;
+  }
+  .loy-card.base {
+    background: linear-gradient(150deg, oklch(0.58 0.050 50) 0%, oklch(0.36 0.045 45) 100%);
+    transform: rotate(-7deg) translate(-30px, -50px);
+    z-index: 1;
+  }
+  .loy-card.silver {
+    background: linear-gradient(150deg, oklch(0.78 0.010 250) 0%, oklch(0.48 0.012 250) 100%);
+    color: oklch(0.16 0.012 250);
+    transform: rotate(0deg) translate(0, 0);
+    z-index: 2;
+  }
+  .loy-card.silver .lc-brand small { opacity: 0.8; }
+  .loy-card.gold {
+    background: linear-gradient(150deg, oklch(0.82 0.130 90) 0%, oklch(0.62 0.130 80) 100%);
+    color: oklch(0.18 0.030 60);
+    transform: rotate(7deg) translate(30px, 50px);
+    z-index: 3;
+  }
+  .loy-card.gold .lc-brand small { opacity: 0.7; }
+
+  /* ── Services ───────────────────────────────────── */
+  .svc-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 14px;
+  }
+  .svc {
+    background: var(--bg-card);
+    border: 1px solid var(--line-soft);
+    border-radius: 6px;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    transition: border-color .2s ease, transform .2s ease;
+  }
+  .svc:hover { border-color: var(--bronze); }
+  .svc .icon {
+    width: 44px; height: 44px;
+    border-radius: 50%;
+    background: var(--bg-deep);
+    color: var(--bronze-d);
+    display: flex; align-items: center; justify-content: center;
+  }
+  .svc h4 { font-family: var(--serif); font-size: 19px; font-weight: 500; margin: 0; line-height: 1.15; }
+  .svc p { font-size: 13px; color: var(--ink-soft); margin: 0; line-height: 1.5; }
+  .svc .tag {
+    margin-top: auto;
+    font-family: var(--mono);
+    font-size: 10px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--muted);
+  }
+  .svc.x4 { grid-column: span 4; }
+  .svc.x3 { grid-column: span 3; }
+  .svc.x6 { grid-column: span 6; padding: 36px; }
+  .svc.x6 h4 { font-size: 32px; }
+  .svc.feat {
+    background: var(--sage);
+    color: var(--bg);
+    border-color: var(--sage);
+  }
+  .svc.feat p { color: oklch(0.88 0.020 150); }
+  .svc.feat .icon { background: oklch(0.40 0.040 150); color: var(--bg); }
+  .svc.feat .tag { color: oklch(0.80 0.020 150); }
+
+  /* ── Moments ────────────────────────────────────── */
+  .moments-grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 12px;
+    grid-auto-rows: 180px;
+  }
+  .moment { border-radius: 4px; overflow: hidden; position: relative; background: var(--bg-deep); }
+  .moment.a { grid-column: span 4; grid-row: span 2; }
+  .moment.b { grid-column: span 4; }
+  .moment.c { grid-column: span 4; }
+  .moment.d { grid-column: span 4; }
+  .moment.e { grid-column: span 4; }
+  .moment .ph-soft .ph-label {
+    top: 14px;
+    bottom: auto;
+  }
+  .moment .caption {
+    position: absolute;
+    left: 16px; bottom: 16px; right: 16px;
+    color: oklch(0.99 0.01 80);
+    z-index: 2;
+  }
+  .moment .caption b {
+    font-family: var(--serif);
+    font-size: 22px;
+    font-weight: 500;
+    display: block;
+  }
+  .moment .caption span {
+    font-family: var(--mono);
+    font-size: 10px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    opacity: 0.85;
+    margin-top: 2px;
+    display: inline-block;
+  }
+  .moment::after {
+    content: ""; position: absolute; inset: 0;
+    background: linear-gradient(180deg, transparent 50%, oklch(0.18 0.012 60 / 0.7) 100%);
+    z-index: 1;
+  }
+
+  /* ── Reviews ────────────────────────────────────── */
+  .reviews-section { background: var(--bg-deep); }
+  .reviews-head {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 32px;
+    align-items: end;
+    margin-bottom: 48px;
+  }
+  .rating-platforms {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+  }
+  .platform {
+    text-align: center;
+    padding: 12px 18px;
+    border-radius: 6px;
+    background: var(--bg-card);
+    border: 1px solid var(--line-soft);
+    min-width: 96px;
+  }
+  .platform .num {
+    font-family: var(--serif);
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 1;
+  }
+  .platform .src {
+    font-family: var(--mono);
+    font-size: 9px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-top: 6px;
+    display: block;
+  }
+  .reviews-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+  }
+  .review {
+    background: var(--bg-card);
+    border: 1px solid var(--line-soft);
+    border-radius: 6px;
+    padding: 28px;
+    display: flex; flex-direction: column; gap: 16px;
+  }
+  .review .stars { color: var(--bronze); font-size: 14px; letter-spacing: 0.15em; }
+  .review .quote {
+    font-family: var(--serif);
+    font-size: 19px;
+    line-height: 1.35;
+    font-weight: 400;
+    color: var(--ink);
+    flex: 1;
+  }
+  .review .who { display: flex; align-items: center; gap: 12px; padding-top: 16px; border-top: 1px solid var(--line-soft); }
+  .review .ava {
+    width: 38px; height: 38px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, oklch(0.78 0.040 70), oklch(0.55 0.040 60));
+    color: var(--bg);
+    display: flex; align-items: center; justify-content: center;
+    font-weight: 600;
+    font-size: 14px;
+  }
+  .review .who div { line-height: 1.2; }
+  .review .who b { display: block; font-size: 13px; font-weight: 600; }
+  .review .who span { font-size: 11px; color: var(--muted); font-family: var(--mono); letter-spacing: 0.06em; }
+  .review .src {
+    font-family: var(--mono);
+    font-size: 9px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-left: auto;
+  }
+
+  /* ── FAQ ────────────────────────────────────────── */
+  .faq-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.4fr;
+    gap: 80px;
+  }
+  .faq-list { display: flex; flex-direction: column; }
+  details.faq {
+    border-bottom: 1px solid var(--line);
+    padding: 22px 0;
+  }
+  details.faq:first-child { border-top: 1px solid var(--line); }
+  details.faq summary {
+    list-style: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+    font-family: var(--serif);
+    font-size: 22px;
+    font-weight: 500;
+    color: var(--ink);
+  }
+  details.faq summary::-webkit-details-marker { display: none; }
+  details.faq summary::after {
+    content: "+";
+    font-family: var(--sans);
+    font-weight: 400;
+    font-size: 22px;
+    color: var(--bronze-d);
+    transition: transform .2s ease;
+    flex: 0 0 auto;
+  }
+  details.faq[open] summary::after { content: "−"; }
+  details.faq .ans {
+    padding: 16px 0 4px;
+    color: var(--ink-soft);
+    font-size: 14px;
+    line-height: 1.6;
+    max-width: 60ch;
+  }
+
+  /* ── Contact / Map ──────────────────────────────── */
+  .contact-section { padding-top: 0; }
+  .contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.4fr;
+    gap: 0;
+    background: var(--bg-card);
+    border: 1px solid var(--line-soft);
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  .contact-info { padding: 48px; }
+  .contact-info .eyebrow { margin-bottom: 16px; display: block; }
+  .contact-info h3 { margin-bottom: 28px; }
+  .contact-list { display: flex; flex-direction: column; gap: 20px; }
+  .ci-row { display: flex; gap: 16px; align-items: flex-start; }
+  .ci-row .ico {
+    width: 36px; height: 36px;
+    border-radius: 50%;
+    background: var(--bg-deep);
+    color: var(--bronze-d);
+    display: flex; align-items: center; justify-content: center;
+    flex: 0 0 36px;
+  }
+  .ci-row .info { font-size: 14px; line-height: 1.5; }
+  .ci-row .info b { display: block; font-weight: 600; font-size: 15px; }
+  .ci-row .info small { display: block; font-family: var(--mono); font-size: 10px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted); margin-top: 2px; }
+  .contact-info .socials {
+    display: flex; gap: 10px;
+    margin-top: 32px;
+    padding-top: 24px;
+    border-top: 1px solid var(--line-soft);
+  }
+  .contact-info .socials a {
+    width: 38px; height: 38px;
+    border-radius: 50%;
+    background: var(--bg-deep);
+    display: flex; align-items: center; justify-content: center;
+    color: var(--ink-soft);
+    transition: background .15s ease, color .15s ease;
+  }
+  .contact-info .socials a:hover { background: var(--bronze); color: var(--bg); }
+
+  .map-wrap {
+    position: relative;
+    min-height: 520px;
+    background: oklch(0.94 0.014 88);
+    overflow: hidden;
+  }
+  .map-wrap::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background:
+      radial-gradient(circle at 30% 60%, oklch(0.92 0.020 100) 0%, transparent 55%),
+      radial-gradient(circle at 75% 30%, oklch(0.91 0.025 90) 0%, transparent 45%),
+      linear-gradient(0deg, oklch(0.91 0.012 90 / 0.4) 1px, transparent 1px),
+      linear-gradient(90deg, oklch(0.91 0.012 90 / 0.4) 1px, transparent 1px);
+    background-size: auto, auto, 48px 48px, 48px 48px;
+  }
+  .map-roads {
+    position: absolute; inset: 0;
+    pointer-events: none;
+  }
+  .map-roads svg { width: 100%; height: 100%; }
+  .map-pin {
+    position: absolute;
+    left: 38%; top: 52%;
+    transform: translate(-50%, -100%);
+    display: flex; flex-direction: column; align-items: center;
+    z-index: 5;
+  }
+  .map-pin .label {
+    background: var(--ink);
+    color: var(--bg);
+    border: 0;
+    padding: 9px 16px;
+    border-radius: 999px;
+    font-size: 13px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    box-shadow: 0 8px 20px -8px oklch(0.20 0.020 60 / 0.40);
+    white-space: nowrap;
+    position: relative;
+  }
+  .map-pin .label::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%) rotate(45deg);
+    width: 8px; height: 8px;
+    background: var(--ink);
+  }
+  .map-pin .dot {
+    width: 22px; height: 28px;
+    background: var(--bronze);
+    border-radius: 22px 22px 22px 22px / 28px 28px 22px 22px;
+    position: relative;
+    box-shadow: 0 4px 12px -2px oklch(0.20 0.020 60 / 0.50);
+  }
+  .map-pin .dot::after {
+    content: "";
+    width: 8px; height: 8px;
+    background: var(--bg);
+    border-radius: 50%;
+    position: absolute;
+    left: 50%; top: 8px;
+    transform: translateX(-50%);
+  }
+  /* secondary POI markers */
+  .poi {
+    position: absolute;
+    z-index: 4;
+    display: flex; flex-direction: column; align-items: center;
+    pointer-events: none;
+  }
+  .poi .pdot {
+    width: 10px; height: 10px;
+    border-radius: 50%;
+    background: var(--bg-card);
+    border: 2px solid var(--ink-soft);
+    box-shadow: 0 2px 4px -1px oklch(0.20 0.020 60 / 0.30);
+  }
+  .poi .plabel {
+    margin-top: 4px;
+    font-family: var(--mono);
+    font-size: 9px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--ink-soft);
+    background: oklch(0.99 0.005 80 / 0.85);
+    padding: 2px 6px;
+    border-radius: 2px;
+    white-space: nowrap;
+  }
+  .poi .pdist {
+    font-family: var(--mono);
+    font-size: 10px;
+    color: var(--bronze-d);
+    margin-top: 2px;
+    background: oklch(0.99 0.005 80 / 0.9);
+    padding: 1px 5px;
+    border-radius: 2px;
+  }
+  .map-legend {
+    position: absolute;
+    left: 20px; top: 20px;
+    background: oklch(0.99 0.005 80 / 0.92);
+    backdrop-filter: blur(8px);
+    border-radius: 4px;
+    padding: 10px 14px;
+    z-index: 5;
+    font-family: var(--mono);
+    font-size: 10px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--muted);
+  }
+  .map-legend b { color: var(--ink); font-weight: 600; font-family: var(--sans); font-size: 12px; letter-spacing: 0.04em; text-transform: none; display: block; margin-top: 2px; }
+  .map-cta {
+    position: absolute;
+    right: 24px; bottom: 24px;
+    z-index: 3;
+  }
+
+  /* ── Final CTA ─────────────────────────────────── */
+  .final-cta {
+    padding: 100px 0 120px;
+    text-align: center;
+  }
+  .final-cta .eyebrow { display: inline-block; margin-bottom: 24px; }
+  .final-cta h2 {
+    font-family: var(--serif);
+    font-size: 88px;
+    font-weight: 500;
+    line-height: 1;
+    margin: 0 0 24px;
+    letter-spacing: -0.015em;
+  }
+  .final-cta h2 em { font-style: italic; color: var(--bronze-d); }
+  .final-cta p { color: var(--ink-soft); font-size: 17px; max-width: 48ch; margin: 0 auto 36px; }
+  .final-cta .cta-row { display: inline-flex; gap: 12px; }
+
+  /* ── Footer ────────────────────────────────────── */
+  footer {
+    background: var(--ink);
+    color: oklch(0.85 0.010 65);
+    padding: 80px 0 40px;
+  }
+  .footer-top {
+    display: grid;
+    grid-template-columns: 1.4fr 1fr 1fr 1fr;
+    gap: 48px;
+    padding-bottom: 56px;
+    border-bottom: 1px solid oklch(0.32 0.012 60);
+  }
+  footer .logo { color: var(--bronze); }
+  footer .logo span { color: oklch(0.65 0.010 65); }
+  footer .col h5 {
+    font-family: var(--mono);
+    font-size: 10px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: oklch(0.65 0.010 65);
+    margin: 0 0 20px;
+    font-weight: 500;
+  }
+  footer .col a { display: block; padding: 6px 0; color: oklch(0.88 0.010 65); font-size: 14px; }
+  footer .col a:hover { color: var(--bronze); }
+  footer .blurb { margin-top: 20px; font-size: 14px; line-height: 1.5; color: oklch(0.75 0.010 65); max-width: 36ch; }
+  .footer-bot {
+    padding-top: 32px;
+    display: flex; justify-content: space-between; align-items: center; gap: 32px;
+    font-size: 12px;
+    color: oklch(0.65 0.010 65);
+    font-family: var(--mono);
+    letter-spacing: 0.04em;
+  }
+  .footer-bot a:hover { color: var(--bronze); }
+
+  /* small icons */
+  .ico-shield, .ico-medal, .ico-clock, .ico-car { width: 18px; height: 18px; }
+
+  /* ── Press strip ────────────────────────────────── */
+  .press {
+    padding: 36px 0;
+    border-top: 1px solid var(--line);
+    border-bottom: 1px solid var(--line);
+  }
+  .press-row {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    align-items: center;
+    gap: 40px;
+  }
+  .press-label {
+    font-family: var(--mono);
+    font-size: 10px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--muted);
+    line-height: 1.5;
+  }
+  .press-label b { display: block; color: var(--ink); font-weight: 600; font-size: 12px; margin-bottom: 4px; }
+  .press-logos {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 0;
+    align-items: center;
+  }
+  .press-logo {
+    text-align: center;
+    color: var(--ink-soft);
+    border-left: 1px solid var(--line-soft);
+    padding: 4px 24px;
+    line-height: 1.1;
+  }
+  .press-logo:first-child { border-left: 0; }
+  .press-logo .nm {
+    font-family: var(--serif);
+    font-style: italic;
+    font-size: 24px;
+    font-weight: 500;
+  }
+  .press-logo .nm.bold { font-family: var(--sans); font-style: normal; font-weight: 700; font-size: 18px; letter-spacing: -0.02em; }
+  .press-logo .nm.mono { font-family: var(--mono); font-style: normal; font-size: 14px; letter-spacing: 0.18em; text-transform: uppercase; font-weight: 500; }
+  .press-logo .nm.serif-r { font-family: var(--serif); font-style: normal; font-weight: 500; font-size: 22px; letter-spacing: 0.04em; }
+  .press-logo small {
+    display: block;
+    font-family: var(--mono);
+    font-size: 8px;
+    letter-spacing: 0.18em;
+    color: var(--muted);
+    margin-top: 6px;
+    text-transform: uppercase;
+  }
+
+  /* ── Restaurant ─────────────────────────────────── */
+  .restaurant {
+    background: var(--ink);
+    color: var(--bg);
+    position: relative;
+    overflow: hidden;
+  }
+  .rest-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.1fr;
+    gap: 80px;
+    align-items: center;
+  }
+  .rest-image {
+    aspect-ratio: 4/5;
+    border-radius: 6px;
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(155deg, oklch(0.50 0.045 65) 0%, oklch(0.28 0.030 50) 100%);
+  }
+  .rest-image::before {
+    content: ""; position: absolute; inset: 0;
+    background-image: repeating-linear-gradient(45deg, transparent 0 22px, oklch(0.99 0.01 80 / 0.05) 22px 23px);
+  }
+  .rest-image .rest-badge {
+    position: absolute;
+    top: 24px; left: 24px;
+    font-family: var(--mono);
+    font-size: 10px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: oklch(0.95 0.020 90);
+    background: oklch(0.20 0.012 60 / 0.45);
+    backdrop-filter: blur(4px);
+    padding: 8px 12px;
+    border-radius: 2px;
+  }
+  .rest-image .stamp {
+    position: absolute;
+    bottom: 24px; right: 24px;
+    width: 110px; height: 110px;
+    border: 1px solid oklch(0.99 0.005 80 / 0.45);
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    flex-direction: column;
+    font-family: var(--serif);
+    color: oklch(0.99 0.005 80 / 0.9);
+    text-align: center;
+    transform: rotate(-8deg);
+  }
+  .stamp b { font-size: 28px; font-weight: 500; line-height: 1; }
+  .stamp .top, .stamp .bot {
+    font-family: var(--mono); font-size: 8px; letter-spacing: 0.22em;
+    text-transform: uppercase; margin-top: 6px;
+  }
+  .stamp .top { margin: 0 0 6px; }
+
+  .rest-copy h2 { font-family: var(--serif); font-size: 64px; font-weight: 500; line-height: 1; letter-spacing: -0.015em; margin: 0 0 24px; }
+  .rest-copy h2 em { font-style: italic; color: var(--bronze); }
+  .rest-copy .eyebrow { color: var(--bronze); display: block; margin-bottom: 20px; }
+  .rest-copy .lede { color: oklch(0.85 0.010 65); font-size: 16px; margin: 0 0 36px; max-width: 50ch; }
+  .rest-menu {
+    border-top: 1px solid oklch(0.32 0.012 60);
+    padding-top: 16px;
+    display: flex; flex-direction: column;
+  }
+  .menu-row {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: baseline;
+    padding: 16px 0;
+    border-bottom: 1px solid oklch(0.30 0.012 60);
+    gap: 16px;
+  }
+  .menu-row:last-child { border-bottom: 0; }
+  .menu-row .dish {
+    font-family: var(--serif);
+    font-size: 22px;
+    font-weight: 500;
+    color: var(--bg);
+    line-height: 1.15;
+  }
+  .menu-row .dish small {
+    display: block;
+    font-family: var(--sans);
+    font-weight: 400;
+    font-size: 12px;
+    color: oklch(0.70 0.010 65);
+    margin-top: 4px;
+  }
+  .menu-row .price {
+    font-family: var(--mono);
+    font-size: 13px;
+    letter-spacing: 0.06em;
+    color: var(--bronze);
+    white-space: nowrap;
+  }
+  .menu-row .price.incl {
+    color: oklch(0.85 0.030 150);
+    background: oklch(0.32 0.040 150);
+    padding: 4px 10px;
+    border-radius: 999px;
+    font-size: 9px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+  }
+  .rest-foot {
+    margin-top: 36px;
+    display: flex; align-items: flex-start; gap: 32px;
+    color: oklch(0.70 0.010 65);
+    font-size: 13px;
+  }
+  .rest-foot .hours b { color: var(--bg); display: block; font-family: var(--mono); font-size: 10px; letter-spacing: 0.16em; margin-bottom: 6px; text-transform: uppercase; font-weight: 500; }
+  .rest-foot .hours { line-height: 1.5; }
+
+  /* ── Day timeline ──────────────────────────────── */
+  .day-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 0;
+    position: relative;
+    margin-top: 24px;
+  }
+  .day-grid::before {
+    content: "";
+    position: absolute;
+    top: 7px;
+    left: 0; right: 0;
+    height: 1px;
+    background: var(--line);
+  }
+  .day-col {
+    padding: 0 20px;
+    position: relative;
+  }
+  .day-col:first-child { padding-left: 0; }
+  .day-col:last-child { padding-right: 0; }
+  .day-col::before {
+    content: "";
+    position: absolute;
+    top: 3px;
+    left: 20px;
+    width: 9px; height: 9px;
+    border-radius: 50%;
+    background: var(--bronze);
+    box-shadow: 0 0 0 4px var(--bg);
+  }
+  .day-col:first-child::before { left: 0; }
+  .day-col .time {
+    font-family: var(--mono);
+    font-size: 11px;
+    letter-spacing: 0.14em;
+    color: var(--bronze-d);
+    font-weight: 500;
+    padding-top: 24px;
+    display: block;
+  }
+  .day-col .h {
+    font-family: var(--serif);
+    font-size: 22px;
+    font-weight: 500;
+    margin-top: 12px;
+    line-height: 1.1;
+    max-width: 16ch;
+  }
+  .day-col .h em { font-style: italic; color: var(--bronze-d); }
+  .day-col .p {
+    font-size: 12px;
+    color: var(--ink-soft);
+    line-height: 1.5;
+    margin-top: 10px;
+    max-width: 22ch;
+  }
+
+  /* ── Neighborhood ───────────────────────────────── */
+  .nbh-section { background: var(--bg-deep); }
+  .nbh-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 64px;
+    align-items: start;
+  }
+  .nbh-left { position: sticky; top: 100px; }
+  .nbh-left .small {
+    margin-top: 24px;
+    font-size: 13px;
+    color: var(--ink-soft);
+    max-width: 32ch;
+  }
+  .nbh-tags { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 24px; }
+  .nbh-tags span {
+    font-size: 12px;
+    padding: 6px 12px;
+    border: 1px solid var(--line);
+    border-radius: 999px;
+    color: var(--ink-soft);
+    background: var(--bg-card);
+  }
+  .nbh-list { display: flex; flex-direction: column; }
+  .nbh-row {
+    display: grid;
+    grid-template-columns: 48px 1fr auto;
+    gap: 24px;
+    align-items: center;
+    padding: 24px 0;
+    border-bottom: 1px solid var(--line);
+  }
+  .nbh-row:first-child { border-top: 1px solid var(--line); }
+  .nbh-row .num {
+    font-family: var(--serif);
+    font-size: 28px;
+    font-weight: 500;
+    font-style: italic;
+    color: var(--bronze-d);
+    line-height: 1;
+  }
+  .nbh-row .info b {
+    font-family: var(--serif);
+    font-size: 24px;
+    font-weight: 500;
+    display: block;
+    line-height: 1.15;
+  }
+  .nbh-row .info span {
+    font-size: 13px;
+    color: var(--ink-soft);
+    margin-top: 4px;
+    display: block;
+    max-width: 50ch;
+  }
+  .nbh-row .dist {
+    text-align: right;
+    line-height: 1.3;
+  }
+  .nbh-row .dist b {
+    display: block;
+    font-family: var(--serif);
+    font-style: italic;
+    font-size: 26px;
+    color: var(--ink);
+    font-weight: 500;
+    margin-bottom: 2px;
+  }
+  .nbh-row .dist span {
+    font-family: var(--mono);
+    font-size: 10px;
+    letter-spacing: 0.14em;
+    color: var(--muted);
+    text-transform: uppercase;
+  }
+
+  /* ── Loyalty & Gift ─────────────────────────────── */
+  .lg-grid {
+    display: grid;
+    grid-template-columns: 1.15fr 1fr;
+    gap: 20px;
+  }
+  .lg-card {
+    border-radius: 8px;
+    padding: 48px;
+    position: relative;
+    overflow: hidden;
+    min-height: 520px;
+    display: flex; flex-direction: column;
+  }
+  .lg-loyalty {
+    background: linear-gradient(155deg, oklch(0.40 0.045 60) 0%, oklch(0.22 0.020 50) 100%);
+    color: var(--bg);
+  }
+  .lg-loyalty::after {
+    content: "";
+    position: absolute;
+    right: -60px; top: -60px;
+    width: 280px; height: 280px;
+    border-radius: 50%;
+    border: 1px solid oklch(0.55 0.045 60 / 0.4);
+    pointer-events: none;
+  }
+  .lg-loyalty::before {
+    content: "";
+    position: absolute;
+    right: -30px; top: -30px;
+    width: 220px; height: 220px;
+    border-radius: 50%;
+    border: 1px solid oklch(0.55 0.045 60 / 0.25);
+    pointer-events: none;
+  }
+  .lg-gift {
+    background: var(--bg-deep);
+    color: var(--ink);
+    border: 1px solid var(--line);
+  }
+  .lg-card .eyebrow { display: block; margin-bottom: 24px; position: relative; z-index: 2; }
+  .lg-loyalty .eyebrow { color: var(--bronze); }
+  .lg-card h3 {
+    font-family: var(--serif);
+    font-size: 44px;
+    font-weight: 500;
+    line-height: 1.02;
+    letter-spacing: -0.01em;
+    margin: 0 0 20px;
+    position: relative;
+    z-index: 2;
+  }
+  .lg-card h3 em { font-style: italic; }
+  .lg-loyalty h3 em { color: var(--bronze); }
+  .lg-gift h3 em { color: var(--bronze-d); }
+  .lg-card .desc {
+    font-size: 14px;
+    margin: 0 0 36px;
+    max-width: 40ch;
+    position: relative;
+    z-index: 2;
+  }
+  .lg-loyalty .desc { color: oklch(0.80 0.010 65); }
+  .lg-gift .desc { color: var(--ink-soft); }
+  .lg-tiers {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0;
+    border-top: 1px solid oklch(0.40 0.020 60);
+    padding-top: 24px;
+    margin-bottom: 28px;
+    position: relative;
+    z-index: 2;
+  }
+  .lg-tier {
+    padding: 0 18px;
+    border-right: 1px solid oklch(0.40 0.020 60);
+  }
+  .lg-tier:first-child { padding-left: 0; }
+  .lg-tier:last-child { border-right: 0; padding-right: 0; }
+  .lg-tier .lvl {
+    font-family: var(--mono);
+    font-size: 10px;
+    letter-spacing: 0.18em;
+    color: var(--bronze);
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+  .lg-tier .name {
+    font-family: var(--serif);
+    font-size: 22px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    line-height: 1;
+  }
+  .lg-tier .perks {
+    font-size: 11px;
+    color: oklch(0.75 0.010 65);
+    line-height: 1.5;
+  }
+  .lg-loyalty .cta-row {
+    margin-top: auto;
+    display: flex; align-items: center; gap: 20px;
+    position: relative; z-index: 2;
+  }
+  .lg-loyalty .small {
+    font-size: 11px;
+    color: oklch(0.65 0.010 65);
+    font-family: var(--mono);
+    letter-spacing: 0.06em;
+    max-width: 18ch;
+    line-height: 1.5;
+  }
+
+  .gift-cards {
+    display: flex;
+    margin: 8px 0 32px;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    height: 180px;
+  }
+  .gc {
+    width: 220px; height: 140px;
+    border-radius: 10px;
+    padding: 18px;
+    position: absolute;
+    box-shadow: 0 16px 32px -16px oklch(0.20 0.020 60 / 0.30);
+    color: oklch(0.96 0.010 90);
+    font-family: var(--serif);
+  }
+  .gc.a { background: linear-gradient(160deg, oklch(0.58 0.060 60) 0%, oklch(0.40 0.060 55) 100%); transform: rotate(-9deg) translateX(-70px); }
+  .gc.b { background: linear-gradient(160deg, oklch(0.45 0.045 150) 0%, oklch(0.28 0.040 150) 100%); transform: rotate(2deg); z-index: 2; }
+  .gc.c { background: linear-gradient(160deg, oklch(0.30 0.020 60) 0%, oklch(0.16 0.012 50) 100%); transform: rotate(10deg) translateX(70px); z-index: 1; }
+  .gc::after {
+    content: "";
+    position: absolute; inset: 0;
+    background: linear-gradient(160deg, transparent 0%, oklch(0.99 0.01 80 / 0.08) 100%);
+    border-radius: 10px;
+    pointer-events: none;
+  }
+  .gc .lbl { font-family: var(--mono); font-size: 8px; letter-spacing: 0.18em; opacity: 0.7; text-transform: uppercase; }
+  .gc .amt { font-size: 32px; font-weight: 500; margin-top: 22px; line-height: 1; }
+  .gc .gname { font-size: 11px; margin-top: 8px; font-family: var(--mono); letter-spacing: 0.10em; opacity: 0.8; text-transform: uppercase; }
+  .gift-foot {
+    margin-top: auto;
+    display: flex; align-items: center; gap: 16px;
+    position: relative; z-index: 2;
+  }
+  .gift-amounts {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-bottom: 24px;
+    position: relative; z-index: 2;
+  }
+  .gift-amounts span {
+    font-family: var(--mono);
+    font-size: 12px;
+    letter-spacing: 0.06em;
+    padding: 8px 14px;
+    background: var(--bg-card);
+    border: 1px solid var(--line);
+    border-radius: 999px;
+    color: var(--ink-soft);
+  }
+  .gift-amounts span.on {
+    background: var(--ink);
+    color: var(--bg);
+    border-color: var(--ink);
+  }
+
+  /* ── Newsletter ─────────────────────────────────── */
+  .news-card {
+    background: var(--sage);
+    color: var(--bg);
+    border-radius: 8px;
+    padding: 64px;
+    display: grid;
+    grid-template-columns: 1.05fr 1fr;
+    gap: 48px;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+  }
+  .news-card::before {
+    content: "2020";
+    position: absolute;
+    right: -30px;
+    bottom: -120px;
+    font-family: var(--serif);
+    font-size: 360px;
+    font-weight: 500;
+    line-height: 1;
+    color: oklch(0.42 0.045 150);
+    pointer-events: none;
+    letter-spacing: -0.02em;
+  }
+  .news-card .eyebrow { color: oklch(0.85 0.025 150); display: block; margin-bottom: 16px; position: relative; }
+  .news-card h3 {
+    font-family: var(--serif);
+    font-size: 44px;
+    font-weight: 500;
+    line-height: 1.02;
+    margin: 0 0 16px;
+    letter-spacing: -0.01em;
+    position: relative;
+  }
+  .news-card h3 em { font-style: italic; }
+  .news-card .desc {
+    color: oklch(0.88 0.020 150);
+    font-size: 15px;
+    margin: 0;
+    max-width: 40ch;
+    position: relative;
+  }
+  .news-right { position: relative; z-index: 2; }
+  .news-form {
+    display: flex;
+    background: var(--bg-card);
+    border-radius: 999px;
+    padding: 6px;
+  }
+  .news-form input {
+    flex: 1;
+    border: 0;
+    background: transparent;
+    padding: 14px 22px;
+    font: inherit;
+    font-size: 14px;
+    color: var(--ink);
+    outline: none;
+    min-width: 0;
+  }
+  .news-form input::placeholder { color: var(--muted); }
+  .news-form button {
+    background: var(--ink);
+    color: var(--bg);
+    padding: 14px 24px;
+    border-radius: 999px;
+    font-weight: 600;
+    font-size: 13px;
+    letter-spacing: 0.02em;
+    white-space: nowrap;
+  }
+  .news-perks {
+    display: flex;
+    gap: 24px;
+    margin-top: 20px;
+    color: oklch(0.86 0.025 150);
+    font-size: 12px;
+  }
+  .news-perks span { display: flex; align-items: center; gap: 8px; }
+  .news-perks svg { flex: 0 0 14px; }
+
+  /* ── Sticky booking bar ─────────────────────────── */
+  .sticky-bar {
+    position: fixed;
+    left: 50%;
+    bottom: 24px;
+    transform: translateX(-50%) translateY(40px);
+    z-index: 60;
+    background: var(--ink);
+    color: var(--bg);
+    border-radius: 999px;
+    padding: 8px 8px 8px 28px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    box-shadow: 0 20px 40px -16px oklch(0.10 0.020 60 / 0.45);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity .3s ease, transform .3s ease;
+    font-size: 13px;
+  }
+  .sticky-bar.on { opacity: 1; transform: translateX(-50%) translateY(0); pointer-events: auto; }
+  .sticky-bar .label { font-family: var(--mono); font-size: 10px; letter-spacing: 0.14em; color: oklch(0.65 0.010 65); text-transform: uppercase; }
+  .sticky-bar .value { font-weight: 600; }
+  .sticky-bar .sep { width: 1px; height: 24px; background: oklch(0.32 0.012 60); }
+  .sticky-bar .grp { display: flex; flex-direction: column; gap: 2px; }
+  .sticky-bar .btn { padding: 12px 22px; }
+
+</style>
+</head>
+<body>
+
+<!-- ========== HEADER ========== -->
+<header class="top">
+  <div class="top-inner">
+    <a href="#" class="logo">
+      <b>ОТЕЛЬ</b>
+      <span>2020 · ЙОШКАР-ОЛА</span>
+    </a>
+    <nav class="primary">
+      <a href="#about">Об отеле</a>
+      <a href="#rooms" class="on">Номера</a>
+      <a href="#restaurant">Кафе</a>
+      <a href="#services">Услуги</a>
+      <a href="#neighborhood">Локация</a>
+      <a href="#contact">Контакты</a>
+    </nav>
+    <div class="top-right">
+      <div class="phone">
+        <b>+7 (927) 870-2020</b>
+        <span>наилучшие цены</span>
+      </div>
+      <a href="#book" class="btn">Забронировать</a>
+    </div>
+  </div>
+</header>
+
+<!-- ========== HERO ========== -->
+<section class="hero">
+  <div class="wrap">
+    <div class="hero-grid">
+      <div class="hero-copy">
+        <span class="eyebrow">Гостиница в Йошкар-Оле · Официальный сайт</span>
+        <h1 class="h-hero">
+          <span class="num">2<em>0</em>2<em>0</em></span>
+          <span class="tag">отель, в&nbsp;который <em>возвращаются.</em></span>
+        </h1>
+        <p class="lede">
+          Уютные номера, бесплатный Wi-Fi, парковка и кафе на территории.
+          10 минут до авто- и ж/д вокзала. Наилучшие цены — по&nbsp;телефону.
+        </p>
+        <div class="hero-stats">
+          <div class="s">
+            <div class="num">5<sup>кат.</sup></div>
+            <div class="lbl">Стандарт · Крепкий сон · Комфорт · Полулюкс · Люкс</div>
+          </div>
+          <div class="s">
+            <div class="num">10<sup>мин</sup></div>
+            <div class="lbl">до авто- и ж/д вокзала</div>
+          </div>
+          <div class="s">
+            <div class="num">15</div>
+            <div class="lbl">мест на бесплатной парковке</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-image-wrap">
+        <div class="ph-room hero-bg"></div>
+        <div class="booking" id="book">
+          <div class="booking-header">
+            <h4>Забронировать</h4>
+            <span>напрямую</span>
+          </div>
+          <div class="row">
+            <div class="field">
+              <label>Заезд</label>
+              <div class="val">14 мая 2026</div>
+            </div>
+            <div class="field">
+              <label>Выезд</label>
+              <div class="val">16 мая 2026</div>
+            </div>
+            <div class="field">
+              <label>Гости</label>
+              <div class="val">2 гостя</div>
+            </div>
+          </div>
+          <button class="find">Найти свободный номер →</button>
+          <div class="note">Без предоплаты · бесплатная отмена за 24 часа</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- trust strip -->
+    <div class="trust">
+      <div class="trust-row">
+        <div class="item">
+          <div class="icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" width="22" height="22"><path d="M12 21.5s-7-6-7-12a7 7 0 0 1 14 0c0 6-7 12-7 12z"/><circle cx="12" cy="9.5" r="2.5"/></svg>
+          </div>
+          <div class="label"><b>10 мин до вокзала</b>Удобное расположение</div>
+        </div>
+        <div class="item">
+          <div class="icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" width="22" height="22"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M10 17V7h3.5a3 3 0 0 1 0 6H10"/></svg>
+          </div>
+          <div class="label"><b>Парковка на 15 мест</b>Бесплатно для гостей</div>
+        </div>
+        <div class="item">
+          <div class="icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" width="22" height="22"><path d="M3 9a15 15 0 0 1 18 0"/><path d="M6 12.5a11 11 0 0 1 12 0"/><path d="M9 16a6 6 0 0 1 6 0"/><circle cx="12" cy="19.5" r="1" fill="currentColor"/></svg>
+          </div>
+          <div class="label"><b>Скоростной Wi-Fi</b>На всей территории</div>
+        </div>
+        <div class="item">
+          <div class="icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" width="22" height="22"><path d="M5 8h12v6a5 5 0 0 1-5 5h-2a5 5 0 0 1-5-5V8z"/><path d="M17 10h2a2 2 0 0 1 0 4h-2"/><path d="M8.5 4.5c.5-.8 0-1.5-.5-2.5M11.5 4.5c.5-.8 0-1.5-.5-2.5M14.5 4.5c.5-.8 0-1.5-.5-2.5"/></svg>
+          </div>
+          <div class="label"><b>Кафе и кофейня</b>Завтраки и десерты</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== ABOUT ========== -->
+<section id="about">
+  <div class="wrap">
+    <div class="about-grid">
+      <div class="about-text">
+        <span class="eyebrow">— Об отеле</span>
+        <h2 class="h-section" style="margin-top:20px">Новая гостиница<br><em>нашего города</em>.</h2>
+        <p>
+          Отличная транспортная развязка позволит добраться в любую точку города,
+          в том числе на авто- и ж/д вокзал в течение 10 минут.
+        </p>
+        <p>
+          Рядом с отелем находятся Парк Победы, ДК им. Ленина и бульвар Победы.
+          С бульвара Победы можно начать прогулку по туристическим местам Йошкар-Олы.
+        </p>
+        <p>Гостеприимство, вежливый персонал, светлые номера и атмосфера позволят вам чувствовать себя как дома.</p>
+        <div class="sig">
+          — Отель 2020 · Йошкар-Ола
+          <small>ул. Суворова, 26г</small>
+        </div>
+      </div>
+      <div class="about-collage">
+        <div class="tile a"><div class="ph-soft warm"><div class="ph-label">ФАСАД · СУВОРОВА, 26Г</div></div></div>
+        <div class="tile b"><div class="ph-soft dusk"><div class="ph-label">ЛОББИ · 21:30</div></div></div>
+        <div class="tile c"><div class="ph-soft cream"><div class="ph-label">ЗАВТРАК · КАФЕ «2020»</div></div></div>
+        <div class="about-badge">
+          <div class="seal">— Отель 2020 · Йошкар-Ола</div>
+          <div class="since">ул. Суворова,<br><em>26г</em></div>
+          <div class="meta">Республика Марий Эл<br>10 мин до вокзала</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== PRESS (removed — no press mentions on original site) ========== -->
+
+<!-- ========== ROOMS ========== -->
+<section id="rooms" class="rooms-section">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="left">
+        <span class="eyebrow">— Номера и цены</span>
+        <h2 class="h-section">Пять категорий —<br><em>от Стандарта до Люкса</em></h2>
+        <p class="sub">Профессиональные гостиничные кровати, гипоаллергенные матрасы и подушки,
+        белоснежное постельное бельё, три полотенца на гостя, тапочки, гигиенические принадлежности,
+        фен и чайный набор. Уборка ежедневно.</p>
+      </div>
+      <a href="tel:+79278702020" class="btn ghost">Наилучшие цены — по телефону →</a>
+    </div>
+
+    <div class="room-grid">
+      <!-- Люкс (featured, spans 2×2) -->
+      <div class="room featured">
+        <div class="img">
+          <div class="ph-room r4"><div class="ph-label">ЛЮКС</div></div>
+          <span class="badge premium">Премиум</span>
+        </div>
+        <div class="body">
+          <div class="title-row">
+            <h3>Люкс</h3>
+            <div class="price"><b>от 6 500 ₽</b><span>за ночь</span></div>
+          </div>
+          <div class="desc">Самая просторная категория отеля — идеально для свадебной ночи или особого случая. Smart-TV, отдельная зона отдыха, фен и чайный набор. Спросите о пакете «Свадебная ночь».</div>
+          <div class="meta">
+            <span>Smart-TV</span>
+            <span>· Wi-Fi</span>
+            <span>· Свадебный пакет</span>
+            <span>· Фен</span>
+          </div>
+          <a href="tel:+79278702020" class="pick">Забронировать люкс →</a>
+        </div>
+      </div>
+
+      <!-- Стандарт -->
+      <div class="room">
+        <div class="img">
+          <div class="ph-room r1"><div class="ph-label">СТАНДАРТ</div></div>
+          <span class="badge">Базовая категория</span>
+        </div>
+        <div class="body">
+          <div class="title-row">
+            <h3>Стандарт</h3>
+            <div class="price"><b>от 2 400 ₽</b><span>за ночь</span></div>
+          </div>
+          <div class="desc">Уютный и стильный номер. Всё необходимое для комфортного отдыха.</div>
+          <div class="meta">
+            <span>Wi-Fi</span>
+            <span>· Фен</span>
+            <span>· Чайный набор</span>
+          </div>
+          <a href="tel:+79278702020" class="pick">Забронировать →</a>
+        </div>
+      </div>
+
+      <!-- Крепкий сон -->
+      <div class="room">
+        <div class="img">
+          <div class="ph-room r2"><div class="ph-label">КРЕПКИЙ СОН</div></div>
+          <span class="badge">Для отдыха</span>
+        </div>
+        <div class="body">
+          <div class="title-row">
+            <h3>Крепкий сон</h3>
+            <div class="price"><b>от 2 800 ₽</b><span>за ночь</span></div>
+          </div>
+          <div class="desc">Профессиональная кровать, гипоаллергенные матрас и подушки.</div>
+          <div class="meta">
+            <span>Wi-Fi</span>
+            <span>· Гипоаллергенно</span>
+            <span>· Фен</span>
+          </div>
+          <a href="tel:+79278702020" class="pick">Забронировать →</a>
+        </div>
+      </div>
+
+      <!-- Комфорт -->
+      <div class="room">
+        <div class="img">
+          <div class="ph-room r3"><div class="ph-label">КОМФОРТ</div></div>
+          <span class="badge hot">Smart-TV</span>
+        </div>
+        <div class="body">
+          <div class="title-row">
+            <h3>Комфорт</h3>
+            <div class="price"><b>от 3 600 ₽</b><span>за ночь</span></div>
+          </div>
+          <div class="desc">Больше пространства и Smart-TV: приложения, мультимедиа в номере.</div>
+          <div class="meta">
+            <span>Smart-TV</span>
+            <span>· Wi-Fi</span>
+            <span>· Фен</span>
+          </div>
+          <a href="tel:+79278702020" class="pick">Забронировать →</a>
+        </div>
+      </div>
+
+      <!-- Полулюкс -->
+      <div class="room">
+        <div class="img">
+          <div class="ph-room r1"><div class="ph-label">ПОЛУЛЮКС</div></div>
+          <span class="badge">Простор</span>
+        </div>
+        <div class="body">
+          <div class="title-row">
+            <h3>Полулюкс</h3>
+            <div class="price"><b>от 4 800 ₽</b><span>за ночь</span></div>
+          </div>
+          <div class="desc">Просторный номер с отдельной зоной отдыха — для долгих поездок и пар.</div>
+          <div class="meta">
+            <span>Smart-TV</span>
+            <span>· Wi-Fi</span>
+            <span>· Зона отдыха</span>
+          </div>
+          <a href="tel:+79278702020" class="pick">Забронировать →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== OFFER ========== -->
+<section style="padding-top: 0;">
+  <div class="wrap">
+    <div class="offer">
+      <div class="offer-text">
+        <span class="eyebrow">— Постоянным гостям и корпоративным клиентам</span>
+        <h3>Специальные<br><em>предложения</em></h3>
+        <p>
+          Для постоянных гостей и корпоративных клиентов всегда действуют специальные предложения.
+          Программа лояльности отеля 2020 — скидки и приятные бонусы при каждом визите.
+          Условия — на стойке или по&nbsp;телефону.
+        </p>
+        <div class="offer-perks">
+          <span>Программа лояльности</span>
+          <span>Корпоративные тарифы</span>
+          <span>Пакет «Свадебная ночь»</span>
+          <span>Подарочные сертификаты</span>
+        </div>
+        <div class="cta-row">
+          <a href="tel:+79278702020" class="btn">Узнать условия по телефону</a>
+          <span class="terms">+7 (927) 870-2020 · 8 (8362) 39-2020</span>
+        </div>
+      </div>
+      <div class="offer-visual">
+        <div class="loyalty-stack">
+          <div class="loy-card base">
+            <div class="lc-top">
+              <div class="lc-brand">Отель 2020<small>программа лояльности</small></div>
+              <div class="lc-tier">BASE</div>
+            </div>
+            <div class="lc-bot">
+              <div class="lc-num">0000&nbsp;0000</div>
+              <div class="lc-pct">0%</div>
+            </div>
+          </div>
+          <div class="loy-card silver">
+            <div class="lc-top">
+              <div class="lc-brand">Отель 2020<small>программа лояльности</small></div>
+              <div class="lc-tier">SILVER</div>
+            </div>
+            <div class="lc-bot">
+              <div class="lc-num">0000&nbsp;0000</div>
+              <div class="lc-pct">7%</div>
+            </div>
+          </div>
+          <div class="loy-card gold">
+            <div class="lc-top">
+              <div class="lc-brand">Отель 2020<small>программа лояльности</small></div>
+              <div class="lc-tier">GOLD</div>
+            </div>
+            <div class="lc-bot">
+              <div class="lc-num">0000&nbsp;0000</div>
+              <div class="lc-pct">10%</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== COMPARE (removed — фиксированных тарифов нет на оригинале) ========== -->
+
+<!-- ========== SERVICES ========== -->
+<section id="services">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="left">
+        <span class="eyebrow">— Услуги</span>
+        <h2 class="h-section">Всё, чтобы вы<br><em>чувствовали себя как дома</em>.</h2>
+      </div>
+    </div>
+
+    <div class="svc-grid">
+
+      <div class="svc feat">
+        <div class="icon">
+          <!-- EV charging — clean plug + lightning -->
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="6" width="13" height="14" rx="2"/><path d="M7 6V4M12 6V4"/><path d="M16 11h2a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2"/><path d="M9.5 10l-2 4h3l-1.5 4 3.5-5h-3l1.5-3z" fill="currentColor" stroke="none"/></svg>
+        </div>
+        <h4>Электромобили — зарядка на парковке</h4>
+        <p>Зарядная станция 7&nbsp;кВт без ограничений по времени. Поставьте машину на ночь — утром&nbsp;в путь.</p>
+        <span class="tag">AC · Type 2 · 14 ₽/кВт</span>
+      </div>
+
+      <div class="svc">
+        <div class="icon">
+          <!-- WiFi -->
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9a15 15 0 0 1 18 0"/><path d="M6 12.5a11 11 0 0 1 12 0"/><path d="M9 16a6 6 0 0 1 6 0"/><circle cx="12" cy="19.5" r="1" fill="currentColor"/></svg>
+        </div>
+        <h4>Wi-Fi на территории</h4>
+        <p>Скоростной интернет во всех номерах и зонах общего пользования. Розетки — в удобных для работы местах.</p>
+        <span class="tag">включено</span>
+      </div>
+
+      <div class="svc">
+        <div class="icon">
+          <!-- Parking -->
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M10 17V7h3.5a3 3 0 0 1 0 6H10"/></svg>
+        </div>
+        <h4>Парковка на 15 мест</h4>
+        <p>Бесплатная парковка с камерами видеонаблюдения для гостей отеля. Свободные места — по наличию.</p>
+        <span class="tag">бесплатно</span>
+      </div>
+
+      <div class="svc">
+        <div class="icon">
+          <!-- TV / display -->
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="4" width="19" height="13" rx="2"/><path d="M8 21h8M12 17v4"/><circle cx="18" cy="14" r="0.6" fill="currentColor"/></svg>
+        </div>
+        <h4>Smart-TV в номерах</h4>
+        <p>Категории Комфорт, Полулюкс и Люкс — с Smart-TV. Приложения, мультимедиа и любимые сервисы.</p>
+        <span class="tag">Комфорт и выше</span>
+      </div>
+
+      <div class="svc">
+        <div class="icon">
+          <!-- Coffee cup -->
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 8h12v6a5 5 0 0 1-5 5h-2a5 5 0 0 1-5-5V8z"/><path d="M17 10h2a2 2 0 0 1 0 4h-2"/><path d="M8 5c0-1 0.5-1.5 0.5-2.5M11 5c0-1 0.5-1.5 0.5-2.5M14 5c0-1 0.5-1.5 0.5-2.5"/></svg>
+        </div>
+        <h4>Кофейня</h4>
+        <p>Свежесваренный кофе из профессиональной кофемашины и десерты от Кафе&nbsp;«2020».</p>
+        <span class="tag">на территории</span>
+      </div>
+
+      <div class="svc">
+        <div class="icon">
+          <!-- Tour / globe + pin -->
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18"/><path d="M12 3a13 13 0 0 1 0 18M12 3a13 13 0 0 0 0 18"/></svg>
+        </div>
+        <h4>Экскурсии «Царевококшайск»</h4>
+        <p>Обзорные и этнографические экскурсии, мастер-классы, дегустация национальной кухни. Стоимость&nbsp;— на ресепшн.</p>
+        <span class="tag">по запросу</span>
+      </div>
+
+      <div class="svc">
+        <div class="icon">
+          <!-- Multi-room / table tennis paddle -->
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="11" cy="9" rx="6" ry="7"/><path d="M14 14l5 5"/><path d="M19 19l1.5 1.5a1.5 1.5 0 0 1-2 2L17 21"/><circle cx="9" cy="7" r="0.8" fill="currentColor"/><circle cx="12" cy="10" r="0.8" fill="currentColor"/></svg>
+        </div>
+        <h4>Многофункциональный зал</h4>
+        <p>Теннисный стол, спортивные снаряды, телевизор 55″ Smart-TV и стол для переговоров — за кулисами лобби.</p>
+        <span class="tag">досуг и переговоры</span>
+      </div>
+
+      <div class="svc">
+        <div class="icon">
+          <!-- Heart for wedding -->
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20s-7-4.5-7-10a4.5 4.5 0 0 1 7-3.5A4.5 4.5 0 0 1 19 10c0 5.5-7 10-7 10z"/></svg>
+        </div>
+        <h4>Свадебная ночь</h4>
+        <p>Проживание 24 часа, завтрак «шведский стол», шампанское и фруктовая тарелка. Есть подарочные сертификаты.</p>
+        <span class="tag">подарочный сертификат</span>
+      </div>
+
+      <div class="svc">
+        <div class="icon">
+          <!-- Dumbbell -->
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9v6M6 7v10M18 7v10M21 9v6M6 12h12"/></svg>
+        </div>
+        <h4>Гостевой визит в фитнес-центр</h4>
+        <p>Партнёрский фитнес-центр Astron Club — гостевой визит для постояльцев отеля.</p>
+        <span class="tag">партнёр</span>
+      </div>
+
+      <div class="svc">
+        <div class="icon">
+          <!-- Iron / laundry -->
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17a5 5 0 0 1 5-5h11l2 5H3z"/><path d="M8 12a8 8 0 0 1 8-7"/><path d="M7 20v1M11 20v1M15 20v1"/></svg>
+        </div>
+        <h4>Прачечная и гладильная</h4>
+        <p>Прачечная и гладильная комната — для гостей отеля. Удобно в командировке и долгих поездках.</p>
+        <span class="tag">по запросу</span>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ========== DAY TIMELINE ========== -->
+<section style="padding-top:0;">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="left">
+        <span class="eyebrow">— Один день у нас</span>
+        <h2 class="h-section">С утра до вечера —<br><em>в удобном ритме</em></h2>
+        <p class="sub">Заезд с 14:00, но если приехали раньше — оставьте чемодан и идите гулять. Багажная комната работает с 9:00.</p>
+      </div>
+    </div>
+
+    <div class="day-grid">
+      <div class="day-col">
+        <span class="time">07:30 — 11:00</span>
+        <div class="h">Завтрак <em>в Кафе «2020»</em></div>
+        <div class="p">Вкусный и полезный завтрак, разнообразное меню от шефа. Блюда можно взять с собой на вынос.</div>
+      </div>
+      <div class="day-col">
+        <span class="time">11:00 — 14:00</span>
+        <div class="h">Город <em>в 10 минутах</em></div>
+        <div class="p">До авто- и ж/д вокзала — 10 минут. Рядом Парк Победы, ДК им. Ленина и бульвар Победы.</div>
+      </div>
+      <div class="day-col">
+        <span class="time">14:00</span>
+        <div class="h">Заезд <em>и приветствие</em></div>
+        <div class="p">Светлый номер, белоснежное бельё, 3 полотенца на гостя, тапочки и гигиенические принадлежности.</div>
+      </div>
+      <div class="day-col">
+        <span class="time">16:00 — 18:00</span>
+        <div class="h">Кофейня <em>на территории</em></div>
+        <div class="p">Свежесваренный кофе из профессиональной кофемашины и десерты от Кафе «2020».</div>
+      </div>
+      <div class="day-col">
+        <span class="time">19:00 — 22:00</span>
+        <div class="h">Досуг <em>и переговоры</em></div>
+        <div class="p">Многофункциональный зал за кулисами лобби: теннисный стол, спортснаряды, телевизор 55″ Smart-TV, стол для переговоров.</div>
+      </div>
+      <div class="day-col">
+        <span class="time">с 23:00</span>
+        <div class="h">Спокойная ночь — <em>и крепкий сон</em></div>
+        <div class="p">Профессиональные гостиничные кровати, гипоаллергенные матрасы и подушки — чтобы отдохнуть перед новым днём.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== MOMENTS ========== -->
+<section id="moments" style="padding-top:0;">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="left">
+        <span class="eyebrow">— Атмосфера</span>
+        <h2 class="h-section">Что любят<br><em>наши гости</em></h2>
+      </div>
+    </div>
+
+    <div class="moments-grid">
+      <div class="moment a">
+        <div class="ph-soft dark"><div class="ph-label">02:14 · НОЧЬ</div></div>
+        <div class="caption"><b>Крепкий сон</b><span>· гипоаллергенные матрасы и подушки</span></div>
+      </div>
+      <div class="moment b">
+        <div class="ph-soft warm"><div class="ph-label">08:30 · ЗАВТРАК</div></div>
+        <div class="caption"><b>Меню от шефа</b><span>· можно взять с собой</span></div>
+      </div>
+      <div class="moment c">
+        <div class="ph-soft cream"><div class="ph-label">ЛОББИ · КОФЕЙНЯ</div></div>
+        <div class="caption"><b>Свежий кофе</b><span>· профессиональная кофемашина</span></div>
+      </div>
+      <div class="moment d">
+        <div class="ph-soft dawn"><div class="ph-label">17:40 · БУЛЬВАР ПОБЕДЫ</div></div>
+        <div class="caption"><b>Прогулка по Йошкар-Оле</b><span>· выход рядом</span></div>
+      </div>
+      <div class="moment e">
+        <div class="ph-soft sage"><div class="ph-label">23:00 · ПАРКОВКА</div></div>
+        <div class="caption"><b>15 машиномест</b><span>· видеонаблюдение, бесплатно</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== CAFE ========== -->
+<section class="restaurant" id="restaurant">
+  <div class="wrap" style="padding-top: 120px; padding-bottom: 120px;">
+    <div class="rest-grid">
+      <div class="rest-image">
+        <span class="rest-badge">Кафе «2020» · на территории отеля</span>
+        <div class="stamp">
+          <span class="top">меню</span>
+          <b>от&nbsp;шефа</b>
+          <span class="bot">с собой — можно</span>
+        </div>
+      </div>
+      <div class="rest-copy">
+        <span class="eyebrow">— Кафе «2020»</span>
+        <h2>Вкусные<br><em>и полезные</em> завтраки.</h2>
+        <p class="lede">
+          Кафе «2020», расположенное на территории отеля, порадует посетителей
+          вкусными и полезными завтраками. Разнообразное меню от шефа позволит
+          удовлетворить любое пожелание наших гостей. Все блюда можно взять с&nbsp;собой
+          на&nbsp;вынос.
+        </p>
+
+        <div class="rest-menu">
+          <div class="menu-row">
+            <div class="dish">Завтраки
+              <small>горячее, выпечка, каши, омлет, кофе и чай</small>
+            </div>
+            <div class="price incl">меню</div>
+          </div>
+          <div class="menu-row">
+            <div class="dish">Обед и ужин
+              <small>разнообразное меню от шефа</small>
+            </div>
+            <div class="price incl">меню</div>
+          </div>
+          <div class="menu-row">
+            <div class="dish">Кофейня
+              <small>свежесваренный кофе и десерты от Кафе 2020</small>
+            </div>
+            <div class="price incl">на&nbsp;месте</div>
+          </div>
+          <div class="menu-row">
+            <div class="dish">Свадебный пакет
+              <small>шведский стол, шампанское, фруктовая тарелка</small>
+            </div>
+            <div class="price incl">по&nbsp;запросу</div>
+          </div>
+        </div>
+
+        <div class="rest-foot">
+          <div class="hours">
+            <b>Завтрак</b>
+            для гостей<br>отеля
+          </div>
+          <div class="hours">
+            <b>На вынос</b>
+            все блюда<br>с&nbsp;собой
+          </div>
+          <a href="tel:+79278702020" class="btn" style="margin-left:auto; background: var(--bronze);">Уточнить меню →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== REVIEWS (removed — на оригинальном сайте отзывов нет; добавим при наличии реальных) ========== -->
+
+<!-- ========== NEIGHBORHOOD ========== -->
+<section class="nbh-section" id="neighborhood">
+  <div class="wrap">
+    <div class="nbh-grid">
+      <div class="nbh-left">
+        <span class="eyebrow">— Что рядом</span>
+        <h2 class="h-section" style="margin-top:16px">Йошкар-Ола<br><em>в пешей доступности</em></h2>
+        <p class="small">
+          Отличная транспортная развязка: до авто- и ж/д вокзала — 10 минут.
+          Рядом Парк Победы, ДК им. Ленина и бульвар Победы — точка старта
+          для прогулки по туристическим местам города.
+        </p>
+        <div class="nbh-tags">
+          <span>Парки</span>
+          <span>Кафе</span>
+          <span>Рестораны</span>
+          <span>Магазины</span>
+          <span>Спортплощадки</span>
+          <span>Прогулки</span>
+        </div>
+      </div>
+      <div class="nbh-list">
+        <div class="nbh-row">
+          <div class="num">01</div>
+          <div class="info">
+            <b>Парк Победы</b>
+            <span>Один из любимых парков города. Прямо рядом с отелем</span>
+          </div>
+          <div class="dist">
+            <b>рядом</b>
+            <span>пешком</span>
+          </div>
+        </div>
+        <div class="nbh-row">
+          <div class="num">02</div>
+          <div class="info">
+            <b>Бульвар Победы</b>
+            <span>С него можно начать прогулку по туристическим местам Йошкар-Олы</span>
+          </div>
+          <div class="dist">
+            <b>рядом</b>
+            <span>пешком</span>
+          </div>
+        </div>
+        <div class="nbh-row">
+          <div class="num">03</div>
+          <div class="info">
+            <b>ДК им. Ленина</b>
+            <span>Дом культуры — концерты, выставки, городские мероприятия</span>
+          </div>
+          <div class="dist">
+            <b>рядом</b>
+            <span>пешком</span>
+          </div>
+        </div>
+        <div class="nbh-row">
+          <div class="num">04</div>
+          <div class="info">
+            <b>Детские и спортивные площадки</b>
+            <span>В пешей доступности — удобно с детьми и для утренней пробежки</span>
+          </div>
+          <div class="dist">
+            <b>рядом</b>
+            <span>пешком</span>
+          </div>
+        </div>
+        <div class="nbh-row">
+          <div class="num">05</div>
+          <div class="info">
+            <b>Рестораны «Старый Георг» и «Камелот»</b>
+            <span>Два известных горожанам ресторана в пешей доступности</span>
+          </div>
+          <div class="dist">
+            <b>рядом</b>
+            <span>пешком</span>
+          </div>
+        </div>
+        <div class="nbh-row">
+          <div class="num">06</div>
+          <div class="info">
+            <b>Магазины «Фасоль» и «Пятёрочка»</b>
+            <span>Продукты и всё необходимое — в паре минут от отеля</span>
+          </div>
+          <div class="dist">
+            <b>2–3 мин</b>
+            <span>пешком</span>
+          </div>
+        </div>
+        <div class="nbh-row">
+          <div class="num">07</div>
+          <div class="info">
+            <b>Авто- и ж/д вокзал</b>
+            <span>С отличной транспортной развязкой доберётесь в любую точку города</span>
+          </div>
+          <div class="dist">
+            <b>10 мин</b>
+            <span>на авто</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== FAQ ========== -->
+<section>
+  <div class="wrap">
+    <div class="faq-grid">
+      <div>
+        <span class="eyebrow">— FAQ</span>
+        <h2 class="h-section" style="margin-top:16px">Частые<br><em>вопросы</em></h2>
+        <p class="lede" style="margin-top:24px">
+          Не нашли ответ? Позвоните нам — +7 (927) 870-2020 или 8 (8362) 39-2020.
+          Наилучшие цены — по телефону.
+        </p>
+      </div>
+      <div class="faq-list">
+        <details class="faq" open>
+          <summary>Какие удобства в номерах?</summary>
+          <div class="ans">Профессиональные гостиничные кровати, гипоаллергенные матрасы и подушки, белоснежное постельное бельё, три полотенца на гостя, тапочки, гигиенические принадлежности, фен, чайный набор и зеркала в полный рост.</div>
+        </details>
+        <details class="faq">
+          <summary>Есть ли Wi-Fi?</summary>
+          <div class="ans">Да, вся территория отеля покрыта зоной доступа к скоростному интернету. Розетки в номерах расположены в удобных для работы местах.</div>
+        </details>
+        <details class="faq">
+          <summary>Есть ли парковка?</summary>
+          <div class="ans">Да. На территории отеля — бесплатная парковка на 15 машиномест с камерами видеонаблюдения. Наличие свободных мест зависит от количества гостей.</div>
+        </details>
+        <details class="faq">
+          <summary>Можно зарядить электромобиль?</summary>
+          <div class="ans">Да. На парковке отеля установлена зарядная станция 7 кВт (AC, Type 2). Стоимость — 14 ₽/кВт, ограничений по времени нет.</div>
+        </details>
+        <details class="faq">
+          <summary>Есть ли кафе в отеле?</summary>
+          <div class="ans">Да. На территории работают Кафе «2020» и кофейня. Все блюда можно взять с собой на вынос.</div>
+        </details>
+        <details class="faq">
+          <summary>Как добраться от вокзала?</summary>
+          <div class="ans">До авто- и ж/д вокзала — 10 минут на авто. Отличная транспортная развязка позволяет быстро добраться в любую точку Йошкар-Олы.</div>
+        </details>
+        <details class="faq">
+          <summary>Есть ли специальные предложения?</summary>
+          <div class="ans">Для постоянных гостей и корпоративных клиентов всегда действуют специальные предложения и программа лояльности. Также предлагаем пакет «Свадебная ночь» и подарочные сертификаты.</div>
+        </details>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== CONTACT / MAP ========== -->
+<section id="contact" class="contact-section">
+  <div class="wrap">
+    <div class="contact-grid">
+      <div class="contact-info">
+        <span class="eyebrow">— Контакты</span>
+        <h3 class="h-card" style="font-size:36px; margin-top:16px">Мы всегда рядом —<br><em style="font-style:italic;color:var(--bronze-d);font-weight:400">в самом центре</em></h3>
+        <div class="contact-list" style="margin-top:32px">
+          <div class="ci-row">
+            <div class="ico">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M5 4h3l2 5-2.5 1.5a11 11 0 0 0 6 6L15 14l5 2v3a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></svg>
+            </div>
+            <div class="info">
+              <b>+7 (927) 870-2020 · 8 (8362) 39-2020</b>
+              <small>наилучшие цены — по телефону</small>
+            </div>
+          </div>
+          <div class="ci-row">
+            <div class="ico">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3.5 6l8.5 7 8.5-7"/></svg>
+            </div>
+            <div class="info">
+              <b><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="0b393b393b63647f6e674b696025797e">[email&#160;protected]</a></b>
+              <small>ответим в течение часа</small>
+            </div>
+          </div>
+          <div class="ci-row">
+            <div class="ico">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21.5s-7-6-7-12a7 7 0 0 1 14 0c0 6-7 12-7 12z"/><circle cx="12" cy="9.5" r="2.5"/></svg>
+            </div>
+            <div class="info">
+              <b>Республика Марий Эл, Йошкар-Ола, ул. Суворова, 26г</b>
+              <small>10 мин до авто- и ж/д вокзала</small>
+            </div>
+          </div>
+        </div>
+        <div class="socials">
+          <a href="#" aria-label="Telegram"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M9.78 18.65l.28-4.23 7.68-6.92c.34-.31-.07-.46-.52-.19L7.74 13.3 3.64 12c-.88-.25-.89-.86.2-1.3l15.97-6.16c.73-.33 1.43.18 1.15 1.3l-2.72 12.81c-.19.91-.74 1.13-1.5.71l-4.13-3.06-1.99 1.93c-.23.23-.42.42-.84.42z"/></svg></a>
+          <a href="#" aria-label="WhatsApp"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.2-1.8-.9-2.1-1-.3-.1-.5-.2-.7.1-.2.3-.8 1-.9 1.2-.2.2-.3.2-.6.1-.3-.2-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6.1-.1.3-.3.4-.5.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5 0-.1-.7-1.6-.9-2.2-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.2.2 2.1 3.3 5.2 4.6.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.8-.7 2-1.4.3-.7.3-1.3.2-1.4 0-.1-.3-.2-.6-.4zM12 2C6.5 2 2 6.5 2 12c0 1.8.5 3.5 1.3 4.9L2 22l5.3-1.4c1.4.8 3 1.2 4.7 1.2 5.5 0 10-4.5 10-10S17.5 2 12 2z"/></svg></a>
+          <a href="#" aria-label="Instagram"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg></a>
+          <a href="#" aria-label="VK"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M13 17h1.5s.5-.1.7-.4c.2-.2.2-.7.2-.7s0-2 1-2.3c.9-.3 2 1.9 3.2 2.7.9.6 1.6.5 1.6.5l3-.1s1.6-.1.8-1.3c-.1-.1-.5-1-2.4-2.7-2-1.8-1.7-1.5.7-4.8 1.5-2 2-3 1.9-3.4-.1-.4-1-.3-1-.3l-3.4.1s-.2-.1-.4.1c-.2.1-.3.4-.3.4s-.6 1.5-1.4 2.8c-1.6 2.7-2.3 2.8-2.5 2.7-.6-.4-.5-1.4-.5-2.1 0-2.2.3-3.1-.6-3.3-.3-.1-.6-.1-1.4-.1-1.1 0-2 0-2.5.3-.4.2-.7.6-.5.6.3 0 .9.1 1.2.6.4.6.4 1.9.4 1.9s.2 3.4-.5 3.8c-.5.3-1.2-.3-2.6-2.7-.7-1.2-1.3-2.6-1.3-2.6s-.1-.3-.3-.4c-.3-.2-.6-.2-.6-.2l-3.2.1s-.5 0-.7.2c-.1.2 0 .6 0 .6s2.5 5.9 5.4 8.9C10.8 17 13 17 13 17z"/></svg></a>
+        </div>
+      </div>
+      <div class="map-wrap">
+        <div class="map-roads">
+          <svg viewBox="0 0 600 520" preserveAspectRatio="xMidYMid slice">
+            <!-- Volga river -->
+            <path d="M520 -20 Q470 130 510 260 Q550 380 470 540"
+                  stroke="oklch(0.78 0.040 230)" stroke-width="80" fill="none" opacity="0.55" stroke-linecap="round"/>
+            <path d="M520 -20 Q470 130 510 260 Q550 380 470 540"
+                  stroke="oklch(0.86 0.030 230)" stroke-width="72" fill="none" opacity="0.5" stroke-linecap="round"/>
+            <!-- main avenue (Кирова, diagonal) -->
+            <path d="M-20 380 L 600 80" stroke="oklch(0.99 0.005 95)" stroke-width="24" fill="none"/>
+            <path d="M-20 380 L 600 80" stroke="oklch(0.86 0.015 95)" stroke-width="24" fill="none" stroke-dasharray="4 14" opacity="0.7"/>
+            <!-- side streets -->
+            <path d="M80 -20 L 280 540" stroke="oklch(0.99 0.005 95)" stroke-width="14" fill="none" opacity="0.95"/>
+            <path d="M300 -20 L 240 540" stroke="oklch(0.99 0.005 95)" stroke-width="12" fill="none" opacity="0.9"/>
+            <path d="M-20 180 L 460 220" stroke="oklch(0.99 0.005 95)" stroke-width="10" fill="none" opacity="0.85"/>
+            <path d="M-20 460 L 460 440" stroke="oklch(0.99 0.005 95)" stroke-width="9" fill="none" opacity="0.8"/>
+            <path d="M-20 60 L 380 40" stroke="oklch(0.99 0.005 95)" stroke-width="7" fill="none" opacity="0.7"/>
+            <!-- park (Lipki) -->
+            <rect x="50" y="60" width="120" height="90" rx="6"
+                  fill="oklch(0.82 0.045 145)" opacity="0.45"/>
+            <circle cx="80" cy="95" r="14" fill="oklch(0.65 0.060 145)" opacity="0.5"/>
+            <circle cx="120" cy="115" r="18" fill="oklch(0.65 0.060 145)" opacity="0.5"/>
+            <circle cx="150" cy="85" r="11" fill="oklch(0.65 0.060 145)" opacity="0.5"/>
+            <!-- city blocks -->
+            <rect x="60" y="200" width="80" height="50" fill="oklch(0.88 0.010 90)" opacity="0.7" rx="2"/>
+            <rect x="60" y="270" width="80" height="50" fill="oklch(0.88 0.010 90)" opacity="0.7" rx="2"/>
+            <rect x="180" y="350" width="60" height="40" fill="oklch(0.88 0.010 90)" opacity="0.7" rx="2"/>
+            <rect x="180" y="100" width="70" height="40" fill="oklch(0.88 0.010 90)" opacity="0.7" rx="2"/>
+            <rect x="320" y="280" width="60" height="50" fill="oklch(0.88 0.010 90)" opacity="0.7" rx="2"/>
+            <rect x="320" y="120" width="50" height="40" fill="oklch(0.88 0.010 90)" opacity="0.7" rx="2"/>
+            <rect x="400" y="180" width="50" height="50" fill="oklch(0.88 0.010 90)" opacity="0.6" rx="2"/>
+            <!-- compass marker bottom-left subtle -->
+          </svg>
+        </div>
+
+        <div class="map-legend">
+          ЙОШКАР-ОЛА
+          <b>10 мин до вокзала</b>
+        </div>
+
+        <!-- Primary pin: hotel -->
+        <div class="map-pin">
+          <div class="label">Отель 2020 · ул. Суворова, 26г</div>
+          <div class="dot"></div>
+        </div>
+
+        <!-- Secondary POIs -->
+        <div class="poi" style="left:30%; top:18%">
+          <div class="pdot"></div>
+          <div class="plabel">Парк Победы</div>
+          <div class="pdist">рядом</div>
+        </div>
+        <div class="poi" style="left:18%; top:78%">
+          <div class="pdot"></div>
+          <div class="plabel">Бульвар Победы</div>
+          <div class="pdist">пешком</div>
+        </div>
+        <div class="poi" style="left:78%; top:62%">
+          <div class="pdot"></div>
+          <div class="plabel">ДК им. Ленина</div>
+          <div class="pdist">пешком</div>
+        </div>
+        <div class="poi" style="left:62%; top:24%">
+          <div class="pdot"></div>
+          <div class="plabel">«Старый Георг» · «Камелот»</div>
+          <div class="pdist">пешком</div>
+        </div>
+        <div class="poi" style="left:14%; top:42%">
+          <div class="pdot"></div>
+          <div class="plabel">Авто- и ж/д вокзал</div>
+          <div class="pdist">10 мин · на авто</div>
+        </div>
+
+        <a href="#" class="btn ghost map-cta" style="background:var(--bg-card)">Построить маршрут →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== LOYALTY + GIFT ========== -->
+<section style="padding: 120px 0;" id="loyalty">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="left">
+        <span class="eyebrow">— Стать своим</span>
+        <h2 class="h-section">Программа лояльности —<br><em>и подарок без коробки</em></h2>
+      </div>
+    </div>
+
+    <div class="lg-grid">
+      <!-- Loyalty -->
+      <div class="lg-card lg-loyalty">
+        <span class="eyebrow">— Программа лояльности отеля 2020</span>
+        <h3>Получайте скидки<br><em>с программой лояльности</em></h3>
+        <p class="desc">
+          Для постоянных гостей и корпоративных клиентов всегда действуют
+          специальные предложения. Условия и текущие бонусы — на ресепшн или по телефону.
+        </p>
+
+        <div class="lg-tiers">
+          <div class="lg-tier">
+            <div class="lvl">после регистрации</div>
+            <div class="name">BASE · 0%</div>
+            <div class="perks">Базовый уровень — доступен сразу после регистрации в программе лояльности.</div>
+          </div>
+          <div class="lg-tier">
+            <div class="lvl">от 7 ночей</div>
+            <div class="name">SILVER · 7%</div>
+            <div class="perks">Скидка 7% при достижении общего количества всех бронирований 7 ночей.</div>
+          </div>
+          <div class="lg-tier">
+            <div class="lvl">от 10 ночей</div>
+            <div class="name">GOLD · 10%</div>
+            <div class="perks">Скидка 10% при достижении общего количества всех бронирований 10 ночей.</div>
+          </div>
+        </div>
+
+        <div class="cta-row">
+          <a href="tel:+79278702020" class="btn">Узнать подробнее →</a>
+          <span class="small">Для постоянных гостей и корпоративных клиентов — спец. предложения</span>
+        </div>
+      </div>
+
+      <!-- Gift -->
+      <div class="lg-card lg-gift">
+        <span class="eyebrow">— Подарочные сертификаты</span>
+        <h3>Прекрасный подарок<br><em>для новобрачных</em></h3>
+        <p class="desc">
+          Сертификаты на пакет «Свадебная ночь» или проживание в отеле.
+          Прекрасный подарок для новобрачных и близких.
+        </p>
+
+        <div class="gift-cards">
+          <div class="gc a">
+            <div class="lbl">Отель 2020</div>
+            <div class="amt">свадьба</div>
+            <div class="gname">Пакет «Свадебная ночь»</div>
+          </div>
+          <div class="gc b">
+            <div class="lbl">Отель 2020 · кафе</div>
+            <div class="amt">ужин</div>
+            <div class="gname">Сертификат на любую сумму</div>
+          </div>
+          <div class="gc c">
+            <div class="lbl">Отель 2020 · люкс</div>
+            <div class="amt">ночь</div>
+            <div class="gname">Проживание в люксе</div>
+          </div>
+        </div>
+
+        <div class="gift-amounts">
+          <span>Свадьба</span>
+          <span class="on">Ночь</span>
+          <span>Ужин</span>
+          <span>Любая сумма</span>
+        </div>
+
+        <div class="gift-foot">
+          <a href="tel:+79278702020" class="btn">Оформить по телефону →</a>
+          <span style="font-size:11px; color:var(--muted); font-family:var(--mono); letter-spacing:0.06em">Подробности — на ресепшн</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== NEWSLETTER ========== -->
+<section style="padding: 0 0 60px;">
+  <div class="wrap">
+    <div class="news-card">
+      <div class="news-left" style="position:relative; z-index:2">
+        <span class="eyebrow">— Специальные предложения</span>
+        <h3>Сезонные бонусы,<br><em>акции и новости отеля</em>.</h3>
+        <p class="desc">
+          Подпишитесь — и первыми узнавайте о специальных предложениях,
+          программе лояльности и пакетах от Отеля 2020.
+        </p>
+      </div>
+      <div class="news-right">
+        <form class="news-form" onsubmit="event.preventDefault(); this.querySelector('button').textContent='Спасибо ✓'">
+          <input type="email" placeholder="Ваш email" required>
+          <button type="submit">Подписаться →</button>
+        </form>
+        <div class="news-perks">
+          <span>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12l5 5L20 7"/></svg>
+            12 писем в год
+          </span>
+          <span>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12l5 5L20 7"/></svg>
+            Только новости отеля
+          </span>
+          <span>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12l5 5L20 7"/></svg>
+            Отписаться — в один клик
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== FINAL CTA ========== -->
+<section class="final-cta">
+  <div class="wrap">
+    <span class="eyebrow">— Готовы к поездке?</span>
+    <h2>Будем рады видеть вас в отеле 2020 —<br><em>однажды побывав, вы вернётесь</em></h2>
+    <p>Наилучшие цены — по телефону. Звоните по всем вопросам.</p>
+    <div class="cta-row">
+      <a href="tel:+79278702020" class="btn">+7 (927) 870-2020</a>
+      <a href="tel:88362392020" class="btn ghost">8 (8362) 39-2020</a>
+    </div>
+  </div>
+</section>
+
+<!-- ========== FOOTER ========== -->
+<footer>
+  <div class="wrap">
+    <div class="footer-top">
+      <div>
+        <a href="#" class="logo">
+          <b>ОТЕЛЬ</b>
+          <span>2 0 2 0 · YOSHKAR-OLA</span>
+        </a>
+        <p class="blurb">
+          Отель 2020 — новая гостиница нашего города.
+          Уютные номера, кафе, кофейня и бесплатная парковка в Йошкар-Оле.
+        </p>
+      </div>
+      <div class="col">
+        <h5>Отель</h5>
+        <a href="#about">Об отеле</a>
+        <a href="#rooms">Номера и цены</a>
+        <a href="#restaurant">Кафе</a>
+        <a href="#services">Услуги</a>
+        <a href="#moments">Атмосфера</a>
+      </div>
+      <div class="col">
+        <h5>Гостям</h5>
+        <a href="tel:+79278702020">Бронирование</a>
+        <a href="#loyalty">Корпоративным клиентам</a>
+        <a href="#loyalty">Программа лояльности</a>
+        <a href="#contact">Как добраться</a>
+      </div>
+      <div class="col">
+        <h5>Контакты</h5>
+        <a href="tel:+79278702020">+7 (927) 870-2020</a>
+        <a href="tel:88362392020">8 (8362) 39-2020</a>
+        <a href="/cdn-cgi/l/email-protection#85b7b5b7b5edeaf1e0e9c5e7eeabf7f0"><span class="__cf_email__" data-cfemail="aa989a989ac2c5decfc6eac8c184d8df">[email&#160;protected]</span></a>
+        <a href="#contact">ул. Суворова, 26г</a>
+        <a href="#contact">Йошкар-Ола, Марий Эл</a>
+      </div>
+    </div>
+    <div class="footer-bot">
+      <span>© 2020, Отель 2020 Йошкар-Ола. Новая гостиница нашего города.</span>
+      <span><a href="#">Политика конфиденциальности</a> · <a href="#">Условия бронирования</a></span>
+    </div>
+    <div class="footer-bot" style="padding-top:8px; font-size:11px; opacity:0.7">
+      <span>* Дизайн интерьера может отличаться и быть индивидуальным для каждого номера.</span>
+    </div>
+  </div>
+</footer>
+
+<!-- Sticky booking bar -->
+<div class="sticky-bar" id="stickyBar">
+  <div class="grp">
+    <span class="label">Заезд</span>
+    <span class="value">14 мая</span>
+  </div>
+  <div class="sep"></div>
+  <div class="grp">
+    <span class="label">Выезд</span>
+    <span class="value">16 мая</span>
+  </div>
+  <div class="sep"></div>
+  <div class="grp">
+    <span class="label">Гости</span>
+    <span class="value">2 · 1 номер</span>
+  </div>
+  <a href="tel:+79278702020" class="btn" style="background: var(--bronze)">Позвонить в отель</a>
+</div>
+
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+(function() {
+  var bar = document.getElementById('stickyBar');
+  var hero = document.querySelector('.hero');
+  var footer = document.querySelector('footer');
+  if (!bar || !hero) return;
+  function check() {
+    var heroBottom = hero.getBoundingClientRect().bottom;
+    var footerTop = footer.getBoundingClientRect().top;
+    var viewH = window.innerHeight;
+    if (heroBottom < 0 && footerTop > viewH) {
+      bar.classList.add('on');
+    } else {
+      bar.classList.remove('on');
+    }
+  }
+  window.addEventListener('scroll', check, { passive: true });
+  window.addEventListener('resize', check);
+  check();
+})();
+</script>
+
+</body>
+</html>
